@@ -1,0 +1,41 @@
+footer{
+
+	background-color: $imagofactoriBgGray;
+  	@include single-box-shadow($imagofactoriShadowColor, 0px, 17px, 15px, 8px);
+  	margin-bottom: 150px;
+  	padding-top: 50px !important;
+
+	.footerSmallTitle
+	{
+		color:$imagofactoriFooterGray;
+		font-size: 0.85em;
+	}
+	.redLine
+	{
+		border-bottom:1px solid $imagofactoriRed;
+		margin-bottom: 20px;
+	}
+	.footerSmallText{
+		color:$imagofactoriFooterGrayDark;
+		font-size:0.8em;
+	}
+
+	.copyrightText
+	{
+		color:$imagofactoriFooterGrayDark;
+		font-size:0.8em;	
+		padding-top:1.2em;
+	}
+
+	.copyrightContent
+	{
+		margin-top:20px;
+		margin-bottom:10px;
+	}
+
+	a,a:hover{
+	color:$imagofactoriLink;
+	}
+
+
+}

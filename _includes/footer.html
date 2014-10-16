@@ -1,0 +1,84 @@
+{% comment %}
+This file should contain the site wide footer (that will be the same for all pages). Contact information and a few logos go here.
+{% endcomment %}
+
+	<footer class='container footerContainer'>
+		<div class="row redLine">
+		    <div class="col-lg-4 col-4">
+				<h6 class='footerSmallTitle'>{{t.[page.lang].footer-include.title1}}</h6>
+		    </div>
+			<div class="col-lg-8 col-8">
+				<div class="row">
+				    <div class="col-lg-4 col-4">
+						<h6 class='footerSmallTitle'>{{t.[page.lang].footer-include.title2}}</h6>
+				   </div>
+				   <div class="col-lg-4 col-4">
+				   </div>
+				   <div class="col-lg-4 col-4">
+						<h6 class='footerSmallTitle'>{{t.[page.lang].footer-include.title3}}</h6>
+				   </div>
+				</div>  
+			</div>
+		</div>
+		<div class="row">
+		    <div class="col-lg-4 col-4 footerSmallText">
+				<p>{{t.[page.lang].footer-include.address1}}</p>
+		    </div>
+			<div class="col-lg-8 col-8">
+			    <div class="row">
+				    <div class="col-lg-4 col-4 footerSmallText">
+						<p>{{t.[page.lang].footer-include.address2}}</p>
+				   </div>
+				   <div class="col-lg-4 col-4 footerSmallText">
+						<p>{{t.[page.lang].footer-include.address3}}</p>					
+				   </div>
+				   <div class="col-lg-4 col-4 footerSmallText">
+						<p>{{t.[page.lang].footer-include.address4}}</p>
+				   </div>
+				</div>
+			</div>
+		</div>
+		<div class="row copyrightContent">
+		    <div class="col-lg-6 col-12 footerSmallText copyrightText">
+		    	{{t.[page.lang].footer-include.copyright}}
+		    </div>
+		    <div class="col-lg-6 col-12 copyrightImages">
+		    	<img src='{{ site.baseurl }}/img/footer/logo_footer.png'/>
+		    	<img src='{{ site.baseurl }}/img/footer/CE.png'/>
+		    	<img src='{{ site.baseurl }}/img/footer/FSC.png'/>
+		    	<img src='{{ site.baseurl }}/img/footer/ETV.png'/>
+		    	<img src='{{ site.baseurl }}/img/footer/UL.png'/>
+		    	<img src='{{ site.baseurl }}/img/footer/SGS.png'/>
+		    </div>
+		</div>
+	</footer>
+
+    
+    <script src="{{ site.baseurl }}/js/vendor/jquery.validate.min.js"></script>
+    <script src="{{ site.baseurl }}/js/vendor/additional-methods.min.js"></script>
+    {% if page.lang != 'en' %}
+    <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/localization/messages_{{ page.lang }}.js"> </script>
+    {% endif %}
+    <script src="{{ site.baseurl }}/js/vendor/jquery.mixitup.min.js"></script>
+    <script src="{{ site.baseurl }}/js/vendor/bootstrap.min.js"></script>
+    <script src="{{ site.baseurl }}/js/vendor/respond.min.js"></script>
+    <script src="{{ site.baseurl }}/js/vendor/jquery.flexslider-min.js"></script>
+    {% comment %} Only for development <script src="{{ site.baseurl }}/js/vendor/holder.js"></script>{% endcomment %}
+    <script src="{{ site.baseurl }}/js/main.js"></script>
+
+    {% comment %}
+    <!-- Google analytics snippet -->
+    <script>
+        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src='http://www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    {% endcomment %}
+
+  </body>
+</html>
+
+
+
+

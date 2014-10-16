@@ -1,0 +1,841 @@
+/*
+COLOR CONSTANTS
+*/
+/*$imagofactoriRed:#bd1d1d;*/
+/* line 1, _sass/_header.scss */
+.languagesContainer {
+  font-size: 0.89em;
+}
+/* line 5, _sass/_header.scss */
+.languagesContainer .googlePlusLink {
+  color: #bc1c1d;
+  float: right;
+  margin-top: 16px;
+}
+/* line 11, _sass/_header.scss */
+.languagesContainer .primaryLangLink {
+  padding-bottom: 0px;
+  padding-right: 5px;
+}
+/* line 12, _sass/_header.scss */
+.languagesContainer .primaryLangLink:hover {
+  color: #636363;
+}
+/* line 16, _sass/_header.scss */
+.languagesContainer .open a, .languagesContainer .open a:hover, .languagesContainer .open a:focus {
+  color: #c2c2c2;
+  background-color: transparent;
+}
+/* line 20, _sass/_header.scss */
+.languagesContainer .open a {
+  line-height: 20px;
+  color: #c7c7c7;
+  border-radius: 0px;
+}
+/* line 26, _sass/_header.scss */
+.languagesContainer .dropdown-menu {
+  background-color: #636363;
+  padding: 5px;
+  margin: 0px;
+  min-width: 75px;
+}
+/* line 33, _sass/_header.scss */
+.languagesContainer .dropdown-menu li a {
+  color: #c7c7c7;
+  float: right;
+  margin-right: 5px;
+  padding: 0px;
+}
+/* line 39, _sass/_header.scss */
+.languagesContainer .dropdown-menu li a:hover, .languagesContainer .dropdown-menu li a:focus {
+  color: #fff;
+  text-decoration: none;
+  background: none;
+}
+
+/* line 49, _sass/_header.scss */
+.logo {
+  /*overflow: hidden;*/
+  max-width: 40%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: inline-block;
+}
+/* line 56, _sass/_header.scss */
+.logo img {
+  width: 100%;
+}
+
+/* line 61, _sass/_header.scss */
+#contactWidget {
+  position: fixed;
+  right: -192px;
+  top: 50%;
+  width: 271px;
+  height: 121px;
+  background: transparent url(../img/contact_btn.png) 0px 0px no-repeat;
+  z-index: 10000;
+  display: block;
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+/* line 79, _sass/_header.scss */
+#contactWidget:hover {
+  right: 0px;
+}
+
+/* line 85, _sass/_header.scss */
+.mainNavBar {
+  margin-bottom: 0px;
+  background: none;
+}
+/* line 90, _sass/_header.scss */
+.mainNavBar .mainNavBarNav {
+  margin-top: 18px;
+  font-size: 0.89em;
+}
+/* line 95, _sass/_header.scss */
+.mainNavBar .mainNavBarNav li {
+  border-right: 1px solid #c7c7c7;
+}
+/* line 98, _sass/_header.scss */
+.mainNavBar .mainNavBarNav li a {
+  color: #c7c7c7;
+  padding: 5px 15px;
+}
+/* line 102, _sass/_header.scss */
+.mainNavBar .mainNavBarNav li a b {
+  font-size: 1.15em;
+}
+/* line 108, _sass/_header.scss */
+.mainNavBar .mainNavBarNav li a:hover, .mainNavBar .mainNavBarNav li a:focus {
+  color: #bc1c1d;
+}
+/* line 114, _sass/_header.scss */
+.mainNavBar .mainNavBarNav li:last-child {
+  border-right: 0px;
+}
+/* line 121, _sass/_header.scss */
+.mainNavBar .mainNavBarNav .active a, .mainNavBar .mainNavBarNav .active a:focus, .mainNavBar .mainNavBarNav .active a:hover {
+  background: transparent url("../img/red_light_link.png") center bottom no-repeat;
+  color: #bc1c1d;
+}
+
+/* line 1, _sass/_home.scss */
+.topImage {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+/* line 8, _sass/_home.scss */
+.quotedTitle {
+  font-size: 1.5em;
+  font-style: italic;
+  padding-top: 10px;
+  color: white;
+}
+
+/* line 15, _sass/_home.scss */
+.smallTitle {
+  font-size: 1.1em;
+}
+
+/* line 20, _sass/_home.scss */
+.bigText {
+  font-size: 1.2em;
+}
+
+/* line 25, _sass/_home.scss */
+.smallText {
+  font-size: 1em;
+}
+
+/* line 30, _sass/_home.scss */
+.contentImage {
+  -moz-box-shadow: 4px 4px 5px 2px #000;
+  -webkit-box-shadow: 4px 4px 5px 2px #000;
+  box-shadow: 4px 4px 5px 2px #000;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* line 39, _sass/_home.scss */
+.lightGradientBg1 {
+  background: transparent url(../img/white_light_1.png) center top no-repeat;
+}
+
+/* line 43, _sass/_home.scss */
+.lightGradientBg2 {
+  background: transparent url(../img/white_light_1.png) center top no-repeat;
+}
+
+/* line 47, _sass/_home.scss */
+.rowUnderline {
+  /*padding-bottom:3px;*/
+  background: transparent url(../img/line.png) center bottom no-repeat;
+}
+
+/* line 53, _sass/_home.scss */
+.sliderTopPadding {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+/* line 57, _sass/_home.scss */
+.sliderBottomPadding {
+  padding-top: 60px;
+}
+
+/*Overwrite flexslider styles to adapt it*/
+/* line 62, _sass/_home.scss */
+.flexslider {
+  background: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 0px !important;
+  margin: 0 0 1px !important;
+}
+
+/* line 72, _sass/_home.scss */
+.flex-prev {
+  background: transparent url(../img/slider_left_arrow.png) 0 0 no-repeat;
+  left: -15px !important;
+  opacity: 1 !important;
+}
+
+/* line 78, _sass/_home.scss */
+.flex-next {
+  background: transparent url(../img/slider_right_arrow.png) 0 0 no-repeat;
+  right: -35px !important;
+  opacity: 1 !important;
+}
+
+/* line 84, _sass/_home.scss */
+.flexslider:hover .flex-next {
+  opacity: 1 !important;
+  right: -35px !important;
+}
+
+/* line 88, _sass/_home.scss */
+.flexslider:hover .flex-prev {
+  opacity: 1 !important;
+  right: -15px !important;
+}
+
+/* line 92, _sass/_home.scss */
+.flex-disabled {
+  opacity: 1 !important;
+}
+
+/* line 96, _sass/_home.scss */
+.flex-direction-nav a:before {
+  content: '' !important;
+}
+
+/*Div injected with javascript to allocate the gradient background*/
+/* line 101, _sass/_home.scss */
+#flex-gradient {
+  z-index: 1;
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  /*background:transparent url('../img/gradient.png') center center no-repeat;*/
+  /*background-size: 100% 100%;*/
+  background: none;
+  /*rgb(28,28,28);*/
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFjMWMxYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIwJSIgc3RvcC1jb2xvcj0iIzFjMWMxYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQwJSIgc3RvcC1jb2xvcj0iIzFjMWMxYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYwJSIgc3RvcC1jb2xvcj0iIzFjMWMxYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgwJSIgc3RvcC1jb2xvcj0iIzFjMWMxYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYzFjMWMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(left, #1c1c1c 0%, rgba(28, 28, 28, 0.8) 20%, rgba(28, 28, 28, 0) 40%, rgba(28, 28, 28, 0) 60%, rgba(28, 28, 28, 0.8) 80%, #1c1c1c 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #1c1c1c), color-stop(20%, #1c1c1c), color-stop(40%, #1c1c1c), color-stop(60%, #1c1c1c), color-stop(80%, #1c1c1c), color-stop(100%, #1c1c1c));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #1c1c1c 0%, rgba(28, 28, 28, 0.8) 20%, rgba(28, 28, 28, 0) 40%, rgba(28, 28, 28, 0) 60%, rgba(28, 28, 28, 0.8) 80%, #1c1c1c 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #1c1c1c 0%, rgba(28, 28, 28, 0.8) 20%, rgba(28, 28, 28, 0) 40%, rgba(28, 28, 28, 0) 60%, rgba(28, 28, 28, 0.8) 80%, #1c1c1c 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #1c1c1c 0%, rgba(28, 28, 28, 0.8) 20%, rgba(28, 28, 28, 0) 40%, rgba(28, 28, 28, 0) 60%, rgba(28, 28, 28, 0.8) 80%, #1c1c1c 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, #1c1c1c 0%, rgba(28, 28, 28, 0.8) 20%, rgba(28, 28, 28, 0) 40%, rgba(28, 28, 28, 0) 60%, rgba(28, 28, 28, 0.8) 80%, #1c1c1c 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1c1c', endColorstr='#1c1c1c',GradientType=1 );
+  /* IE6-8 */
+}
+
+/* line 1, _sass/_footer.scss */
+footer {
+  background-color: #1c1c1c;
+  -moz-box-shadow: 0px 17px 15px 8px #060606;
+  -webkit-box-shadow: 0px 17px 15px 8px #060606;
+  box-shadow: 0px 17px 15px 8px #060606;
+  margin-bottom: 150px;
+  padding-top: 50px !important;
+}
+/* line 8, _sass/_footer.scss */
+footer .footerSmallTitle {
+  color: #636363;
+  font-size: 0.85em;
+}
+/* line 13, _sass/_footer.scss */
+footer .redLine {
+  border-bottom: 1px solid #7b1d1e;
+  margin-bottom: 20px;
+}
+/* line 18, _sass/_footer.scss */
+footer .footerSmallText {
+  color: #646464;
+  font-size: 0.8em;
+}
+/* line 23, _sass/_footer.scss */
+footer .copyrightText {
+  color: #646464;
+  font-size: 0.8em;
+  padding-top: 1.2em;
+}
+/* line 30, _sass/_footer.scss */
+footer .copyrightContent {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+/* line 36, _sass/_footer.scss */
+footer a, footer a:hover {
+  color: #c8c8c8;
+}
+
+/* line 1, _sass/_aboutus.scss */
+.verticalAlignedText {
+  line-height: 10em;
+}
+
+/*
+	PRODUCT LIST AND PRODUCT DETAIL PAGES STYLES
+*/
+/* line 7, _sass/_products.scss */
+.listItem {
+  min-height: 200px;
+}
+/* line 8, _sass/_products.scss */
+.listItem a:hover {
+  text-decoration: none;
+}
+/* line 10, _sass/_products.scss */
+.listItem .listTitleBg {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  margin-top: -50px;
+  z-index: 1;
+  position: relative;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 20, _sass/_products.scss */
+.listItem .listTitle {
+  width: 100%;
+  height: 40px;
+  margin-top: -40px;
+  z-index: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  line-height: 40px;
+  color: #c7c7c7;
+  font-weight: bold;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+/* line 38, _sass/_products.scss */
+.listItem:hover .listTitleBg {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+
+/* line 44, _sass/_products.scss */
+#productsGrid {
+  min-height: 300px;
+}
+/* line 46, _sass/_products.scss */
+#productsGrid .mix {
+  opacity: 0;
+  display: none;
+}
+
+/* line 53, _sass/_products.scss */
+.filter {
+  background-color: none;
+  cursor: pointer;
+  float: left;
+  padding: 2px 5px 2px 5px;
+  list-style: none;
+  margin: 10px 10px 5px 0px;
+}
+
+/* line 62, _sass/_products.scss */
+.productsGridFilters {
+  padding-top: 40px;
+  padding-bottom: 0px;
+}
+/* line 66, _sass/_products.scss */
+.productsGridFilters ul {
+  padding: 0px;
+  display: block;
+  height: 100%;
+  overflow: auto;
+  border-right: 1px solid #c7c7c7;
+}
+/* line 74, _sass/_products.scss */
+.productsGridFilters .active {
+  color: #bc1c1d;
+}
+
+/*
+Jquery Tools Overlay Styling 
+*/
+/*Product detail overlay*/
+/* line 85, _sass/_products.scss */
+.apple_overlay, .apple_overlay_contact {
+  /* initially overlay is hidden */
+  display: none;
+  /* growing background image */
+  background-image: url(../img/overlay/white2.png);
+  /*
+    width after the growing animation finishes
+    height is automatically calculated
+    */
+  /*width:1048px;*/
+  width: 820px;
+  /* some padding to layout nested elements nicely  */
+  padding: 10px;
+  -moz-box-shadow: 0px 0px 15px 8px #060606;
+  -webkit-box-shadow: 0px 0px 15px 8px #060606;
+  box-shadow: 0px 0px 15px 8px #060606;
+  /* default close button positioned on upper right corner */
+}
+/* line 100, _sass/_products.scss */
+.apple_overlay .close, .apple_overlay_contact .close {
+  background-image: url(../img/overlay/close.png);
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  width: 32px;
+  height: 35px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  z-index: 1;
+}
+
+/* line 111, _sass/_products.scss */
+#overlay, #overlayContact {
+  /* use a semi-transparent image for the overlay */
+  /*background-image:url(../img/overlay/transparent.png);*/
+  background-color: #181818;
+  height: 450px;
+}
+
+/* container for external content. uses vertical scrollbar, if needed */
+/* line 118, _sass/_products.scss */
+div.contentWrap, div.contentWrapContact {
+  /*height:441px;*/
+  height: 450px;
+  width: 820px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+/* line 126, _sass/_products.scss */
+.apple_overlay_contact {
+  width: 640px;
+}
+/* line 128, _sass/_products.scss */
+.apple_overlay_contact .rowUnderline {
+  padding-bottom: 15px;
+}
+/* line 132, _sass/_products.scss */
+.apple_overlay_contact .close {
+  right: 7px;
+  top: 10px;
+}
+
+/* line 136, _sass/_products.scss */
+#overlayContact {
+  height: 700px;
+}
+
+/* container for external content. uses vertical scrollbar, if needed */
+/* line 140, _sass/_products.scss */
+div.contentWrapContact {
+  /*height:441px;*/
+  height: 700px;
+  width: 930px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+/*Contact response message*/
+/* line 150, _sass/_products.scss */
+.productContactResponse {
+  display: none;
+  padding-top: 150px;
+}
+
+/*Product detail styles*/
+/* line 157, _sass/_products.scss */
+#productDetails {
+  padding-top: 50px;
+}
+/* line 160, _sass/_products.scss */
+#productDetails h5 {
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+/* line 166, _sass/_products.scss */
+#productDetails h6 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-weight: normal;
+  padding-right: 35px;
+}
+
+/* line 174, _sass/_products.scss */
+#productDescription {
+  overflow-y: auto;
+  max-height: 95px;
+}
+/* line 178, _sass/_products.scss */
+#productDescription h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+/* line 183, _sass/_products.scss */
+#productDescription p {
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
+
+/* line 189, _sass/_products.scss */
+#productDescriptionContact {
+  max-height: 110px;
+  overflow-y: auto;
+}
+
+/* line 195, _sass/_products.scss */
+.offreBtn {
+  display: block;
+  background: url(../img/offre_btn.png) 0 0 no-repeat;
+  position: absolute;
+  right: -8px;
+  bottom: 20px;
+  cursor: pointer;
+  width: 254px;
+  height: 65px;
+  color: white;
+  font-weight: normal;
+  padding: 18px 80px 5px 10px;
+  text-transform: uppercase;
+  font-size: .9em;
+}
+
+/* line 208, _sass/_products.scss */
+.offreBtn:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 1, _sass/_references.scss */
+.logosRow {
+  margin-top: 30px;
+}
+
+/*
+	CONTACT FORM STYLES
+*/
+/* line 4, _sass/_contact.scss */
+.contactForm {
+  padding-top: 90px;
+}
+/* line 7, _sass/_contact.scss */
+.contactForm textarea {
+  height: 200px !important;
+}
+
+/* line 9, _sass/_contact.scss */
+input, textarea {
+  background-color: #eaeaea !important;
+}
+
+/* line 13, _sass/_contact.scss */
+.form-control {
+  -moz-border-radius: 0px / 0px;
+  -webkit-border-radius: 0px 0px;
+  border-radius: 0px / 0px;
+  height: 28px;
+}
+
+/* line 18, _sass/_contact.scss */
+.control-label {
+  text-transform: uppercase;
+  text-align: left !important;
+  padding: 0px 10px 0px 60px !important;
+  font-size: 1.4em;
+}
+
+/* line 26, _sass/_contact.scss */
+.submitButton {
+  -moz-border-radius: 0px / 0px;
+  -webkit-border-radius: 0px 0px;
+  border-radius: 0px / 0px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /*@include single-box-shadow($imagofactoriShadowColor, -2px, -3px, 20px, 0px, 'inset');*/
+}
+
+/* line 36, _sass/_contact.scss */
+.error {
+  font-weight: normal;
+  font-size: 0.9em;
+  color: #7b1d1e;
+}
+
+/* line 43, _sass/_contact.scss */
+.contactResponseMessage {
+  line-height: 200px;
+}
+
+/* line 1, _sass/_animations.scss */
+#animimagofactoriheader_hype_container {
+  height: 300px !important;
+  background: black !important;
+  position: relative;
+  z-index: -1;
+  /* Hack HYPE animations to be resposive  */
+}
+/* line 7, _sass/_animations.scss */
+#animimagofactoriheader_hype_container .HYPE_scene {
+  background: transparent !important;
+}
+/* line 11, _sass/_animations.scss */
+#animimagofactoriheader_hype_container .HYPE_element {
+  width: 100% !important;
+  left: 0px !important;
+}
+
+/* line 17, _sass/_animations.scss */
+#animimagofactorireferences_hype_container {
+  max-height: 150px !important;
+  background: black !important;
+  position: relative;
+  z-index: -1;
+  /* Hack HYPE animations to be resposive  */
+}
+/* line 23, _sass/_animations.scss */
+#animimagofactorireferences_hype_container .HYPE_scene {
+  background: transparent !important;
+}
+/* line 27, _sass/_animations.scss */
+#animimagofactorireferences_hype_container .HYPE_element {
+  width: 100% !important;
+  left: 0px !important;
+}
+
+/* line 33, _sass/_animations.scss */
+#animimagofactori_hype_container {
+  max-height: 370px !important;
+  background: transparent !important;
+  position: relative;
+  z-index: 99;
+  display: none;
+}
+@media (min-width: 1200px) {
+  /* line 33, _sass/_animations.scss */
+  #animimagofactori_hype_container {
+    display: block;
+  }
+}
+/* line 42, _sass/_animations.scss */
+#animimagofactori_hype_container .HYPE_scene {
+  background: transparent !important;
+}
+/* line 46, _sass/_animations.scss */
+#animimagofactori_hype_container .HYPE_element {
+  font-size: 12px !important;
+  min-width: 65px !important;
+}
+
+/* line 51, _sass/_animations.scss */
+#animimagofactori_hype_container_image {
+  display: block;
+}
+@media (min-width: 1200px) {
+  /* line 51, _sass/_animations.scss */
+  #animimagofactori_hype_container_image {
+    display: none;
+  }
+}
+
+/*
+COMMON/GLOBAL STYLES
+*/
+/* line 34, _sass/main.scss */
+html {
+  height: 100%;
+}
+
+/* line 37, _sass/main.scss */
+body {
+  background-color: #1F1F1F;
+  /*:url('../img/bodyBackground.jpg') repeat 0px 0px;*/
+  color: #c7c7c7;
+  height: 100%;
+}
+
+/* line 43, _sass/main.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #c7c7c7;
+}
+
+/* line 45, _sass/main.scss */
+a, a:hover {
+  color: #bc1c1d;
+}
+
+/* line 49, _sass/main.scss */
+.title {
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+/* line 55, _sass/main.scss */
+.titleUnderline {
+  padding-bottom: 3px;
+  background: transparent url(../img/line.png) -150px bottom no-repeat;
+}
+
+/*
+	TWITTER BOOTSTRAP CONTAINERS overwrites
+*/
+/* line 65, _sass/main.scss */
+.mainContainer {
+  background-color: #1c1c1c;
+  -moz-box-shadow: 0px 17px 15px 8px #060606;
+  -webkit-box-shadow: 0px 17px 15px 8px #060606;
+  box-shadow: 0px 17px 15px 8px #060606;
+  margin-top: -20px;
+  min-height: 150px;
+  padding: 0px 30px 0px 30px;
+}
+
+/*Only used on page layout. The main container overlaps the top image a little bit more*/
+/* line 75, _sass/main.scss */
+.pageContainer {
+  margin-top: -45px;
+  -moz-box-shadow: 0px 58px 15px 8px #060606;
+  -webkit-box-shadow: 0px 58px 15px 8px #060606;
+  box-shadow: 0px 58px 15px 8px #060606;
+}
+
+/* line 81, _sass/main.scss */
+.mainContainer, .footerContainer {
+  padding: 0px 30px 0px 30px;
+}
+
+@media (min-width: 768px) {
+  /* line 88, _sass/main.scss */
+  .mainContainer, .mainNavBarContainer, .languagesContainer, .footerContainer {
+    max-width: 728px;
+  }
+
+  /* line 91, _sass/main.scss */
+  .apple_overlay, .apple_overlay_contact, div.contentWrap, div.contentWrapContact {
+    max-width: 600px;
+  }
+
+  /* line 94, _sass/main.scss */
+  .contactForm {
+    padding-top: 20px;
+  }
+  /* line 97, _sass/main.scss */
+  .contactForm textarea {
+    height: 50px !important;
+  }
+
+  /* line 99, _sass/main.scss */
+  #overlayContact, div.contentWrapContact {
+    height: 520px;
+  }
+
+  /* line 102, _sass/main.scss */
+  .copyrightImages {
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  /* line 109, _sass/main.scss */
+  .mainContainer, .mainNavBarContainer, .languagesContainer, .footerContainer {
+    max-width: 940px;
+  }
+
+  /* line 112, _sass/main.scss */
+  .contactForm {
+    padding-top: 20px;
+  }
+  /* line 115, _sass/main.scss */
+  .contactForm textarea {
+    height: 50px !important;
+  }
+
+  /* line 117, _sass/main.scss */
+  #overlayContact, div.contentWrapContact {
+    height: 520px;
+  }
+
+  /* line 120, _sass/main.scss */
+  .copyrightImages {
+    text-align: right;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 127, _sass/main.scss */
+  .mainContainer, .mainNavBarContainer, .languagesContainer, .footerContainer {
+    /*max-width: 1170px;*/
+    max-width: 1020px;
+  }
+
+  /* line 131, _sass/main.scss */
+  .apple_overlay, .apple_overlay_contact, div.contentWrap, div.contentWrapContact {
+    max-width: 820px;
+  }
+
+  /* line 134, _sass/main.scss */
+  .contactForm {
+    padding-top: 90px;
+  }
+  /* line 137, _sass/main.scss */
+  .contactForm textarea {
+    height: 200px !important;
+  }
+
+  /* line 139, _sass/main.scss */
+  #overlayContact, div.contentWrapContact {
+    height: 700px;
+  }
+
+  /* line 142, _sass/main.scss */
+  .copyrightImages {
+    text-align: right;
+  }
+}

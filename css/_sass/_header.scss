@@ -1,0 +1,130 @@
+.languagesContainer
+{
+	font-size:0.89em;
+
+	.googlePlusLink{
+		color:$imagofactoriMenuRed;
+		float:right;
+		margin-top: 16px;
+	}
+
+	.primaryLangLink{padding-bottom:0px;padding-right:5px;}
+	.primaryLangLink:hover{color:$imagofactoriFooterGray;}
+
+	
+	.open{
+		a,a:hover,a:focus {
+			color: #c2c2c2;
+			background-color: transparent;
+		}
+		a {
+			line-height: 20px;
+			color: #c7c7c7;
+			border-radius: 0px;
+		}
+	}
+	.dropdown-menu
+	{
+		background-color: $imagofactoriFooterGray;
+		padding: 5px;
+		margin: 0px;
+		min-width: 75px;
+		li{
+			a{
+				color: $imagofactoriGray;
+				float:right;
+				margin-right: 5px;
+				padding:0px;
+			}
+			a:hover,a:focus
+			{
+				color: #fff;
+				text-decoration: none;
+				background: none;
+			}
+		}
+	}
+}
+
+.logo
+{
+	/*overflow: hidden;*/
+	max-width: 40%;
+	padding-top:0px;
+	padding-bottom:0px;
+	display:inline-block;
+	img{
+		width:100%;
+	}
+}
+
+#contactWidget
+{
+	position:fixed;
+	right:-192px;
+	top:50%;
+	width:271px;
+	height:121px;
+	background: transparent url(../img/contact_btn.png) 0px 0px no-repeat;
+	z-index:10000;
+	display:block;
+
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+
+}
+#contactWidget:hover
+{
+	//@include translate3d(-191px,0px,0px);
+	right:0px;
+}
+
+.mainNavBar
+{
+	margin-bottom: 0px;
+	background: none;
+
+	.mainNavBarNav
+	{
+		margin-top:18px;
+		font-size: 0.89em;
+
+		li
+		{
+			border-right: 1px solid $imagofactoriGray;
+			a
+			{
+				color:$imagofactoriGray;
+				padding:5px 15px;
+				b
+				{
+					font-size: 1.15em;	
+				}
+				
+			}
+			a:hover,a:focus
+			{
+				color:$imagofactoriMenuRed;
+			}	
+		}
+
+		li:last-child
+		{
+			border-right: 0px;
+		}
+
+		.active
+		{
+			a,a:focus,a:hover
+			{
+				background: transparent url('../img/red_light_link.png') center bottom no-repeat;
+				color:$imagofactoriMenuRed;
+			}
+		}
+	}
+}
+
+

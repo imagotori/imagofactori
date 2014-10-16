@@ -1,0 +1,54 @@
+{% assign t = site.tags.translations[0] %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title> {% if page.title %} {{ page.title }} | {% endif %} imago factori </title>
+        <meta name="viewport" content="width=device-width">
+        <meta name="keywords" content="production, china, factory, b2b, swiss, switzerland, manufacture, quality, mass market, luxury, local, office, Shenzhen, work, relationship, know how, win-win, qc, control, product development, product, project"/>
+    </head>
+    <body>
+
+    <div class='container'>
+        <div class='row'>
+            <div class="col-7" id='productImage'>
+                <img class='contentImage' style='width:100%' src='{{ site.baseurl }}/img/products/thumbs/{{ page.image1 }}' />
+            </div>
+            <div class="col-5" id='productDetails'>
+
+                <h5>{{t.[page.lang].product-page.dimensions}}</h5>
+                <h6>{{ page.dimensions }}</h6>
+                <h5>{{t.[page.lang].product-page.ourservices}}</h5>
+                <h6>{{ page.our_services}}</h6>
+                <h5>{{t.[page.lang].product-page.leadtime}}</h5>
+                <h6>{{ page.production_leadtime }}</h6>
+                <h5>{{t.[page.lang].product-page.priceperunit}}</h5>
+                <h6>{{ page.price_per_unit }}</h6>
+                <h5>{{t.[page.lang].product-page.minquantperorder}}</h5>
+                <h6>{{ page.moq }}</h6>
+            </div>
+        </div>
+        <div class='row'>
+            <div class="col-7" id='productDescription'>
+                <h4 id='productTitle'> {{ page.product_type }} : {{page.title}}</h4>
+                {{ content }}
+            </div>
+            <div class="col-5">
+            </div>
+        </div>
+    </div>
+    
+    {% comment %}
+    <!-- Google analytics snippet -->
+    <script>
+        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src='http://www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    {% endcomment %}
+
+  </body>
+</html>
+  </body>

@@ -1,0 +1,62 @@
+<div class="container languagesContainer">
+
+  <a class='googlePlusLink' target='_blank' href="https://plus.google.com/u/0/102861526400525732819/about" rel="publisher"> | Google +</a>
+
+    <ul class="nav navbar-nav pull-right">
+      <li class="dropdown">
+
+{% assign currentPage = '' %}
+{% case include.menuIndex %}
+  {% when 1 %} {% assign currentPage = 'aboutus.html' %}
+  {% when 2 %} {% assign currentPage = 'productlist.html' %}
+  {% when 3 %} {% assign currentPage = 'references.html' %}
+  {% when 4 %} {% assign currentPage = 'contact.html' %}
+  {% else %} {% assign currentPage = '' %}
+{% endcase %}
+
+
+
+{% case page.lang %}
+  {% comment %}
+  {#% when 'de' %}
+
+        <a href="#" id="drop3" role="button" class="dropdown-toggle primaryLangLink" data-toggle="dropdown">{{t.[page.lang].header-include.lang3}}<b class="caret"></b></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="{{ site.baseurl }}/{{ currentPage }}">{{t.[page.lang].header-include.lang1}}</a>
+                </li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="{{ site.baseurl }}/fr/{{ currentPage }}">{{t.[page.lang].header-include.lang2}}</a>
+                </li>
+            </ul>
+  {% endcomment %}
+  {% when 'fr' %}
+        <a href="#" id="drop3" role="button" class="dropdown-toggle primaryLangLink" data-toggle="dropdown">{{t.[page.lang].header-include.lang2}}<b class="caret"></b></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="{{ site.baseurl }}/{{ currentPage }}">{{t.[page.lang].header-include.lang1}}</a>
+                </li>
+                {% comment %}
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="{{ site.baseurl }}/de/{{ currentPage }}">{{t.[page.lang].header-include.lang3}}</a>
+                </li>
+                {% endcomment %}
+            </ul>
+  {% else %}
+        <a href="#" id="drop3" role="button" class="dropdown-toggle primaryLangLink" data-toggle="dropdown">{{t.[page.lang].header-include.lang1}}<b class="caret"></b></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="{{ site.baseurl }}/fr/{{ currentPage }}">{{t.[page.lang].header-include.lang2}}</a>
+                </li>
+                {% comment %}
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="{{ site.baseurl }}/de/{{ currentPage }}">{{t.[page.lang].header-include.lang3}}</a>
+                </li>
+                {% endcomment %}
+            </ul>
+{% endcase %}
+        </li>
+    </ul>
+
+
+</div>

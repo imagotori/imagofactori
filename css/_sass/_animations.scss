@@ -1,0 +1,59 @@
+#animimagofactoriheader_hype_container{
+	height:300px !important;
+	background: black !important;
+	position: relative;
+	z-index: -1;
+	/* Hack HYPE animations to be resposive  */ 
+	.HYPE_scene
+	{
+		background: transparent !important;
+	}
+	.HYPE_element
+	{
+		width:100% !important;
+		left:0px !important;
+	}
+}
+#animimagofactorireferences_hype_container{
+	max-height:150px !important;
+	background: black !important;
+	position: relative;
+	z-index: -1;
+	/* Hack HYPE animations to be resposive  */ 
+	.HYPE_scene
+	{
+		background: transparent !important;
+	}
+	.HYPE_element
+	{
+		width:100% !important;
+		left:0px !important;
+	}
+}
+#animimagofactori_hype_container{
+	max-height:370px !important;
+	background: transparent !important;
+	position: relative;
+	z-index: 99;
+	display:none;
+	@media (min-width: 1200px) {
+		display:block;
+	}
+	.HYPE_scene
+	{
+		background: transparent !important;
+	}
+	.HYPE_element{
+		font-size:12px !important;
+		min-width: 65px !important;
+	}
+}
+#animimagofactori_hype_container_image{
+	display:block;
+	@media (min-width: 1200px) {
+		display:none;
+	}
+}
+
+
+

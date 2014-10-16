@@ -1,0 +1,149 @@
+/*
+COLOR CONSTANTS
+*/
+$imagofactoriGray: #c7c7c7;
+$imagofactoriBgGray:#1c1c1c;
+$imagofactoriShadowColor:#060606;
+$imagofactoriFooterGray:#636363;
+$imagofactoriFooterGrayDark:#646464;
+/*$imagofactoriRed:#bd1d1d;*/
+$imagofactoriRed:#7b1d1e;
+$imagofactoriMenuRed:#bc1c1d;
+$imagofactoriLink: #c8c8c8;
+$imagofactoriInputBg: #eaeaea;
+$imagofactoryProductBgGray:#181818;
+
+
+@import "compass/css3/box-shadow";
+@import "compass/css3/border-radius";
+@import "compass/css3/opacity";
+@import "compass/css3/transform";
+@import "header";
+@import "home";
+@import "footer";
+@import "aboutus";
+@import "products";
+@import "references";
+@import "contact";
+@import "animations";
+
+
+/*
+COMMON/GLOBAL STYLES
+*/
+html {
+	height:100%;
+}
+body {  
+	background-color: #1F1F1F; /*:url('../img/bodyBackground.jpg') repeat 0px 0px;*/
+	color:$imagofactoriGray;
+	height:100%;
+}  
+
+h1,h2,h3,h4,h5,h6{color:$imagofactoriGray;}
+
+a,a:hover{
+	color:$imagofactoriMenuRed;
+}
+
+.title
+{
+	font-size:1.8em;
+	text-transform: uppercase;
+}
+
+.titleUnderline
+{
+	padding-bottom:3px;
+	background: transparent url(../img/line.png) -150px bottom no-repeat;
+}
+
+/*
+	TWITTER BOOTSTRAP CONTAINERS overwrites
+*/
+
+.mainContainer
+{
+	background-color: $imagofactoriBgGray;
+	@include single-box-shadow($imagofactoriShadowColor, 0px, 17px, 15px, 8px);
+	margin-top: -20px;
+	min-height:150px;
+	padding: 0px 30px 0px 30px;
+}
+
+/*Only used on page layout. The main container overlaps the top image a little bit more*/
+.pageContainer
+{
+	margin-top: -45px;
+	@include single-box-shadow($imagofactoriShadowColor, 0px, 58px, 15px, 8px);
+}
+
+.mainContainer,.footerContainer
+{
+	padding: 0px 30px 0px 30px;
+}
+
+@media (min-width: 768px)
+{
+	.mainContainer,.mainNavBarContainer,.languagesContainer ,.footerContainer{
+		max-width: 728px;
+	}
+	.apple_overlay,.apple_overlay_contact,div.contentWrap,div.contentWrapContact {
+		max-width:600px;
+	}
+	.contactForm
+	{
+		padding-top:20px;
+		textarea{height:50px !important}
+	}
+	#overlayContact,div.contentWrapContact {
+		height:520px;
+	}
+	.copyrightImages
+	{
+		text-align: left;
+	}
+}
+@media (min-width: 992px)
+{
+	.mainContainer,.mainNavBarContainer,.languagesContainer,.footerContainer {
+		max-width: 940px;
+	}
+	.contactForm
+	{
+		padding-top:20px;
+		textarea{height:50px !important}
+	}
+	#overlayContact,div.contentWrapContact {
+		height:520px;
+	}
+	.copyrightImages
+	{
+		text-align: right;
+	}
+}
+@media (min-width: 1200px)
+{
+	.mainContainer,.mainNavBarContainer,.languagesContainer,.footerContainer {
+		/*max-width: 1170px;*/
+		max-width: 1020px;
+	}
+	.apple_overlay,.apple_overlay_contact,div.contentWrap,div.contentWrapContact {
+		max-width:820px;
+	}
+	.contactForm
+	{
+		padding-top:90px;
+		textarea{height:200px !important}
+	}	
+	#overlayContact,div.contentWrapContact {
+	height:700px;
+	}	
+	.copyrightImages
+	{
+		text-align: right;
+	}
+}
+
+
+ 
