@@ -13,27 +13,29 @@
 
     <div class="container mainContainer pageContainer">
 
-		{% assign logosclients = "client-01.png,client-08.png,client-15.png,client-22.png,client-29.png,client-02.png,client-09.png,client-16.png,client-23.png,client-30.png,client-03.png,client-10.png,client-17.png,client-24.png,client-31.png,client-04.png,client-11.png,client-18.png,client-25.png,client-32.png,client-05.png,client-12.png,client-19.png,client-26.png,client-33.png,client-06.png,client-13.png,client-20.png,client-27.png,client-07.png,client-14.png,client-21.png,client-28.png" | split: "," %}
+		{% assign logosclients = "client-01.png,client-08.png,client-15.png,client-22.png,client-02.png,client-09.png,client-16.png,client-23.png,client-03.png,client-10.png,client-17.png,client-24.png,client-04.png,client-11.png,client-18.png,client-05.png,client-12.png,client-19.png,client-06.png,client-13.png,client-20.png,client-07.png,client-14.png,client-21.png" | split: "," %}
 
 		<div class='row'>
 			<div class="col-lg-12">
 				<h3 class='title titleUnderline'>{{ page.title }}</h3>
 			</div>
 		</div>
-		{% comment %}
+
 		<div class='row logosRow'>
 				{% for logo in logosclients %}
-		        <div class="col-6 col-sm-6 col-md-4 col-lg-4">
-		        	<img  style='width:100%;height:110px;' src="{{ site.baseurl }}/img/clients/{{ logo }}"/>
+		        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+		        	<div class="referenceLogo" style="background-image:url( {{ site.baseurl }}/img/clients/{{ logo }} );"></div>
 		        </div>
 		        {% endfor %}
 		</div>
-		{% endcomment %}
+
+		{% comment %}
 		<div class='row logosRow'>
 		        <div class="col-12 text-center">
 		        	<img  style='width:100%;max-width:709px' src="{{ site.baseurl }}/img/clients/logos-all.png"/>
 		        </div>
 		</div>
+		{% endcomment %}
 
 
 

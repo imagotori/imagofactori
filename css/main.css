@@ -559,6 +559,14 @@ div.contentWrapContact {
   margin-top: 30px;
 }
 
+/* line 6, _sass/_references.scss */
+.referenceLogo {
+  background-size: 80%;
+  background-repeat: no-repeat;
+  min-height: 180px;
+  background-position: 50% 50%;
+}
+
 /*
 	CONTACT FORM STYLES
 */
