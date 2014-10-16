@@ -1,0 +1,90 @@
+    {% include header.html menuIndex=2 %}
+
+    <img class='topImage' style="max-height:150px;" src="{{ site.baseurl }}/img/page_top_img_produce.jpg">
+    
+    <div class="container mainContainer pageContainer">
+
+		{% comment %}
+		This file show how to build a product list of all the published products in a given language.
+		This product list will be necessary for the mixitup.io plugin.
+		{% endcomment %}
+
+		<div class='row'>
+			<div class="col-lg-12">
+				<h3 class='title titleUnderline'>{{ page.title }}</h3>
+			</div>
+		</div>
+
+		<div class='row rowUnderline productsGridFilters'>
+			<div class="col-lg-6">
+				{% comment %}
+				Product groups:<br/>
+				{% endcomment %}
+				Clients:<br/>
+				<ul>
+					<li class="filter filterReset filter1" data-filter="all">All</li>
+				{% for option in site.prose.metadata.products[3].field.options %}
+					<li class="filter filter1" data-filter="{{ option.value }}">{{ option.name }}</li>
+				{% endfor%}
+				</ul>
+			</div>
+			<div class="col-lg-6">
+				Sector:
+				<ul style='border:0px;'>
+					<li class="filter filterReset filter2" data-filter="all">All</li>
+				{% for option in site.prose.metadata.products[4].field.options %}
+					<li class="filter filter2" data-filter="{{ option.value }}">{{ option.name }}</li>
+				{% endfor%}
+				</ul>
+			</div>
+		</div>
+
+
+		<div class='row lightGradientBg1'  style='padding-top:60px'>
+			<div class='col-lg-12' id='productsGrid'>
+
+				{% for product in site.pages %}
+					{% if product.layout == 'product' and product.lang == page.lang and product.published == true %}
+	
+						<div class="col-lg-4 col-sm-6 col-12 listItem mix {{ product.sector }} {{ product.product_group }} all">
+							<a class='productOverlay'  href="{{ site.baseurl }}{{ product.url }}" rel='#overlay'>
+								<img class='contentImage' style='width:100%' src='{{ site.baseurl }}/img/products/thumbs/{{ product.image1 }}' />
+								<div class='listTitleBg'></div>
+								<div class='listTitle'>{{ product.title }} {{ product.product_type}} </div>
+							</a>
+						</div>
+
+				  	{% endif %}
+				{% endfor %}
+
+			</div>
+		</div>
+
+		<!-- overlayed product detail view element -->
+		<div class="apple_overlay" id="overlay">
+		  <!-- the external content is loaded inside this tag -->
+		   <a class='offreBtn' href='#' rel='#overlayContact'>{{ page.offre }}</a>
+		  <div class="contentWrap"></div>
+		</div>
+
+		<!-- overlayed product contact form element -->
+		<div class="apple_overlay_contact" id="overlayContact">
+		  <!-- the external content is loaded inside this tag -->
+			<div class='row rowUnderline'>
+		        <div class="col-lg-3 col-5"  id='productImageContact'>
+		        </div>
+		        <div class="col-lg-8 col-7" id="productDescriptionContact"></div>
+			</div>
+			<div class='row lightGradientBg2'>
+		        <div class="col-lg-12 col-12">
+		        	{% include contactForm.html responseType='product' %}
+					<script type='text/javascript'>
+		        	$('#contactForm textarea').val('{{t.[page.lang].product-page.formprefill}}');
+		        	</script>
+		        	<div class="contentWrap"></div>
+		        </div>
+		    </div>
+		</div>
+
+    </div>
+    {% include footer.html %}

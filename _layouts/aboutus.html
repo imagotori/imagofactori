@@ -1,0 +1,74 @@
+    {% include header.html menuIndex=1 %}
+
+    <img class='topImage' src="{{ site.baseurl }}/img/home_top_img.jpg">
+
+    
+    <div class="container mainContainer pageContainer">
+
+		<div class='row'>
+			<div class="col-lg-12">
+				<h3 class='title titleUnderline'>{{ page.title }}</h3>
+			</div>
+		</div>
+
+		<div class='row rowUnderline' style='padding-top:40px;padding-bottom:60px;'>
+		        <div class="col-lg-6">
+		        	{{ page.text1 }}
+		        </div>
+		        <div class="col-lg-6">
+		        	<img class='contentImage' src="{{ site.baseurl }}/img/aboutus_img1.png" style='margin-top:0px'/>
+		        </div>
+		</div>
+
+		<div class='row lightGradientBg1' style='padding-top:60px'>
+
+		        {% comment %}
+		        WE CHANGE THE IMAGES FOR HTML% ANIMATION
+		        <div class="col-lg-3 verticalAlignedText text-right">
+		        	{{ page.custrequest }}
+		        </div>
+		        <div class="col-lg-6">
+		                <img src="{{ site.baseurl }}/img/aboutus_deliveryprocess_{{page.lang}}.png" style='margin-top:23px'/>
+		        </div>
+		        <div class="col-lg-3 verticalAlignedText text-center">
+		        	{{ page.delivery }}
+		        </div>
+		        {% endcomment %}
+
+		        <div class="col-12">
+
+				<div class="" id="animimagofactori_hype_container" style="position:relative;overflow:hidden;width:1000px;height:540px;">
+					<script type="text/javascript" charset="utf-8" src="{{ site.baseurl }}/img/animations/anim_imagofactori.hyperesources/animimagofactori_hype_generated_script.js?9757"></script>
+				</div>
+
+			    <img style="width:100%" id='animimagofactori_hype_container_image' src="{{ site.baseurl }}/img/aboutus_deliveryprocess.png"/>
+
+			   </div>
+
+		</div>
+
+		<div class='row rowUnderline' style='padding-top:20px;padding-bottom:60px;'>
+		        <div class="col-lg-3 verticalAlignedText text-right">
+		        </div>
+		        <div class="col-lg-9">
+					{% comment %}
+		        	<h4>{{ page.title2 }}</h4>
+		        	{{ page.text2 }}
+					{% endcomment %}
+		        </div>
+		</div>
+
+		<div class='row lightGradientBg1' style='padding-top:40px;padding-bottom:60px;'>
+		        <div class="col-lg-6">
+					{{ page.title3 }}<br/><br/>
+					{{ page.text3 }}
+		        	<img class='contentImage' src="{{ site.baseurl }}/img/aboutus_img2.png"/>
+		        </div>
+		        <div class="col-lg-6">
+					{{ page.title4 }}<br/><br/>
+					{{ page.text4 }}
+		        </div>
+		</div>
+
+    </div>
+    {% include footer.html %}

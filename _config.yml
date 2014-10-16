@@ -1,0 +1,334 @@
+name: Imagofactori.com
+highlighter: true
+baseurl: /imagofactori
+exclude:
+  - .gitignore
+  - README.md
+  - specs-docs
+languages: &languages
+  - name: "English"
+    value: "en"
+  - name: "French"
+    value: "fr"
+#  - name: "German"
+#    value: "de"
+
+
+prose:
+  metadata:
+    index.md:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "default"
+      - name: "lang"
+        field:
+          element: "select"
+          label: "Select language"
+          placeholder: "English"
+          options: *languages
+          selected: "en"
+      - name: "title"
+        field: 
+          element: "text"
+          label: "Title"
+          placeholder: "Enter page title here"
+      - name: "quote"
+        field: 
+          element: "textarea"
+          label: "Home page quote"
+      - name: "title1"
+        field: 
+          element: "text"
+          label: "First block of text title"
+          placeholder: "Enter title here"
+      - name: "text1"
+        field: 
+          element: "textarea"
+          label: "First block of text"
+          placeholder: "Enter text here"
+      - name: "title2"
+        field: 
+          element: "text"
+          label: "Second block of text title"
+          placeholder: "Enter text here"
+      - name: "text2"
+        field: 
+          element: "textarea"
+          label: "Second block of text"
+          placeholder: "Enter text here"
+      - name: "subtitle1"
+        field: 
+          element: "text"
+          label: "1st block of text on bottom title"
+          placeholder: "Enter text here"
+      - name: "subtext1"
+        field: 
+          element: "textarea"
+          label: "1st block of text on bottom"
+          placeholder: "Enter text here"
+      - name: "subtitle2"
+        field: 
+          element: "text"
+          label: "2nd block of text on bottom title"
+          placeholder: "Enter text here"
+      - name: "subtext2"
+        field: 
+          element: "textarea"
+          label: "2nd block of text on bottom"
+          placeholder: "Enter text here"          
+      - name: "subtitle3"
+        field: 
+          element: "text"
+          label: "3rd block of text on bottom title"
+          placeholder: "Enter text here"
+      - name: "subtext3"
+        field: 
+          element: "textarea"
+          label: "3rd block of text on bottom"
+          placeholder: "Enter text here"
+      - name: "subtitle4"
+        field: 
+          element: "text"
+          label: "4th block of text on bottom title"
+          placeholder: "Enter text here"
+      - name: "subtext4"
+        field: 
+          element: "textarea"
+          label: "4th block of text on bottom"
+          placeholder: "Enter text here"
+      - name: "linkstext"
+        field: 
+          element: "text"
+          label: "Links text"
+          placeholder: "Enter text here"
+    aboutus.md:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "aboutus"
+      - name: "lang"
+        field:
+          element: "select"
+          label: "Select language"
+          placeholder: "English"
+          options: *languages
+          selected: "en"
+      - name: "title"
+        field: 
+          element: "text"
+          label: "Title"
+          placeholder: "Enter page title here"
+      - name: "text1"
+        field: 
+          element: "textarea"
+          label: "First block of text"
+          placeholder: "Enter text here"
+          value: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+      - name: "custrequest"
+        field: 
+          element: "text"
+          label: "Customer request text"
+          placeholder: "Enter text here"
+      - name: "delivery"
+        field: 
+          element: "text"
+          label: "Delivery text"
+          placeholder: "Enter text here"
+      - name: "title2"
+        field: 
+          element: "text"
+          label: "2nd block of text title"
+          placeholder: "Enter text here"
+      - name: "text2"
+        field: 
+          element: "textarea"
+          label: "2nd block of text"
+          placeholder: "Enter text here"
+      - name: "title3"
+        field: 
+          element: "text"
+          label: "3rd block of text title"
+          placeholder: "Enter text here"
+      - name: "text3"
+        field: 
+          element: "textarea"
+          label: "3rd block of text"
+          placeholder: "Enter text here"
+      - name: "title4"
+        field: 
+          element: "text"
+          label: "4th block of text title"
+          placeholder: "Enter text here"
+      - name: "text4"
+        field: 
+          element: "textarea"
+          label: "4th block of text"
+          placeholder: "Enter text here"          
+    contactresponse.md:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "contactresponse"
+      - name: "lang"
+        field:
+          element: "select"
+          label: "Select language"
+          placeholder: "English"
+          options: *languages
+          selected: "en"
+      - name: "title"
+        field: 
+          element: "text"
+          label: "Title"
+          placeholder: "Enter page title here"
+    productlist.md:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "productlist"
+      - name: "lang"
+        field:
+          element: "select"
+          label: "Select language"
+          placeholder: "English"
+          options: *languages
+          selected: "en"
+      - name: "title"
+        field: 
+          element: "text"
+          label: "Title"
+          placeholder: "Enter page title here"
+      - name: "offre"
+        field: 
+          element: "text"
+          label: "Obtenir une offre text"
+          placeholder: "Enter text here"
+    products:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "product"
+      - name: "title"
+        field: 
+          element: "text"
+          label: "Title"
+          placeholder: "Enter product title here"
+      - name: "lang"
+        field:
+          element: "select"
+          label: "Select language"
+          placeholder: "English"
+          options: *languages
+          selected: "en"
+      - name: "product_group"
+        field:
+          element: "select"
+          #label: "Product Group"
+          label: "Clients"
+          placeholder: "Select a product group"
+          options:
+#            - name: "Leisure & Sports objects"
+#              value: "leisure_and_sport_objects"
+#            - name: "Point of sales material"
+#              value: "point_of_sales_material"
+#            - name: "Promotion objects"
+#              value: "promotional_objects"
+#            - name: "Leather goods"
+#              value: "leather_goods"
+#            - name: "Electronic goods"
+#              value: "electronic_goods"
+            - name : "Audemars Piguet"
+              value: "audemars_piguet"
+            - name: "BCV"
+              value: "bcv"  
+            - name: "Concord"
+              value: "concord"  
+            - name: "Ebel"
+              value: "ebel"
+            - name: "Harry Winston"
+              value: "harry_winston"
+            - name: "Ichill"
+              value: "ichill"
+            - name: "IWC Schaffausen"
+              value: "iwc_schaffausen"
+            - name: "Melazic"
+              value: "melazic"
+            - name: "Mövenpick"
+              value: "movenpick"
+            - name: "Nescafé"
+              value: "nescafe"
+            - name: "On demand"
+              value: "on_demand_-_confidentiality_policy"
+            - name: "Qoqa"
+              value: "qoqa"
+            - name: "Raymond Weil"
+              value: "raymond_weil"
+            - name: "Richard Mille"
+              value: "richard_mille"
+            - name: "Shanghai Tang"
+              value: "shanghai_tang"
+            - name: "Tag Heuer"
+              value: "tag_heuer"
+#            - name: "Cabestan"
+#              value: "cabestan"
+#            - name: "Hublot"
+#              value: "hublot"
+#            - name: "Girard-Perregaux"
+#              value: "girard-perregaux"
+#            - name: "Techno Marine"
+#              value: "techno_marine"
+#            - name: "88 Rue du Rhone"
+#              value: "88_rue_du_rhone"
+#            - name: "Movado"
+#              value: "movado"
+#            - name: "Henniez"
+#              value: "henniez"
+#            - name: "Nestlé"
+#              value: "nestle"
+#            - name: "1887 Castel"
+#              value: "1887_castel"
+      - name: "sector"
+        field:
+          element: "select"
+          label: "Sector"
+          placeholder: "Select a sector"
+          options:
+            - name: "Luxury"
+              value: "luxury"
+            - name: "Mass market"
+              value: "mass_market"
+            - name: "Leisure & Sports"
+              value: "leisure_and_sport"
+            - name: "Electronics"
+              value: "electronics"
+      - name: "color"
+        field:
+          element: "text"
+          label: "Color"
+          value: ""
+      - name: "material"
+        field:
+          element: "text"
+          label: "material"
+          value: ""
+      - name: "lead_time"
+        field:
+          element: "text"
+          label: "Lead time in day"
+          value: ""
+      - name: "price_per_unit"
+        field:
+          element: "text"
+          label: "Price per unit ex factory"
+          value: ""
+      - name: "min_quant_per_order"
+        field:
+          element: "text"
+          label: "Minimum quantity per order"
+          value: ""
+      - name: "image"
+        field:
+          element: "text"
+          label: "Image for this product"
+          value: ""

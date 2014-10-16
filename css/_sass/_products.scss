@@ -1,0 +1,212 @@
+/*
+	PRODUCT LIST AND PRODUCT DETAIL PAGES STYLES
+*/
+
+$listTitleHeight: 40px;
+
+.listItem{
+	a:hover{text-decoration:none}
+	min-height: 200px;
+	.listTitleBg
+	{
+		width: 100%;
+		height: $listTitleHeight;
+		background-color: black;
+		margin-top: -($listTitleHeight+10);
+		z-index: 1;
+		position: relative;
+		@include opacity(.7);
+	}
+	.listTitle
+	{
+		width: 100%;
+		height: $listTitleHeight;
+		margin-top: -$listTitleHeight;
+		z-index: 1;
+		padding-left:10px;
+		padding-right:10px;
+		position: relative;
+		line-height: $listTitleHeight;	
+		color:$imagofactoriGray;
+		font-weight:bold;
+		font-size:0.9em;
+		text-transform:uppercase;
+		overflow: hidden;
+	}
+}
+.listItem:hover{
+	.listTitleBg
+	{
+		@include opacity(.8);
+	}
+}
+
+#productsGrid{
+	min-height:300px;
+	.mix{
+	    opacity: 0;
+	    display: none;
+	}
+
+}
+
+.filter
+{
+	background-color:none;
+	cursor:pointer;
+	float:left;
+	padding:2px 5px 2px 5px;
+	list-style:none;
+	margin: 10px 10px 5px 0px;
+}
+.productsGridFilters
+{
+	padding-top:40px;
+	padding-bottom:0px;
+	ul
+	{
+		padding:0px;
+		display: block;
+		height: 100%;
+		overflow: auto;
+		border-right: 1px solid $imagofactoriGray;
+	}
+	.active
+	{
+		color:$imagofactoriMenuRed;
+	}
+}
+
+
+/*
+Jquery Tools Overlay Styling 
+*/
+/*Product detail overlay*/
+.apple_overlay,.apple_overlay_contact {
+    /* initially overlay is hidden */
+    display:none;
+    /* growing background image */
+    background-image:url(../img/overlay/white2.png);
+    /*
+      width after the growing animation finishes
+      height is automatically calculated
+      */
+    /*width:1048px;*/
+    width:820px;
+    /* some padding to layout nested elements nicely  */
+    padding:10px;
+    @include single-box-shadow($imagofactoriShadowColor, 0px, 0px, 15px, 8px);
+	/* default close button positioned on upper right corner */
+	.close {
+    	background-image:url(../img/overlay/close.png);
+    	position:absolute; right:20px; top:20px;
+    	cursor:pointer;
+    	width:32px;
+    	//height:27px;
+    	height:35px;
+    	@include opacity(1);
+    	z-index:1;
+	}
+}
+#overlay,#overlayContact {
+	/* use a semi-transparent image for the overlay */
+	/*background-image:url(../img/overlay/transparent.png);*/
+	background-color:$imagofactoryProductBgGray;
+	height:450px;
+}
+ /* container for external content. uses vertical scrollbar, if needed */
+div.contentWrap,div.contentWrapContact {
+	/*height:441px;*/
+	height:450px;
+	width:820px;
+    overflow-y:/*auto;*/hidden;
+    overflow-x:hidden;
+}
+
+.apple_overlay_contact {
+    width:640px;
+    .rowUnderline
+    {
+    	padding-bottom:15px;
+    }
+	.close {
+		right:7px; top:10px;
+	}
+}
+#overlayContact {
+	height:700px;
+}
+ /* container for external content. uses vertical scrollbar, if needed */
+div.contentWrapContact {
+	/*height:441px;*/
+	height:700px;
+	width:930px;
+    overflow-y:/*auto;*/hidden;
+    overflow-x:hidden;
+}
+
+
+/*Contact response message*/
+.productContactResponse
+{
+	display:none;
+	padding-top:150px;
+}
+
+/*Product detail styles*/
+#productDetails
+{	
+	padding-top:50px;
+	h5{
+		text-transform: uppercase;
+		margin-bottom:0px;
+		font-weight:bold;
+		font-size:0.9em;
+	}
+	h6
+	{
+		margin-top:0px;
+		margin-bottom:20px;
+		font-weight:normal;
+		padding-right: 35px;
+	}
+}    
+#productDescription
+{
+	overflow-y:auto;
+	max-height:95px;
+	h4{
+		text-transform: uppercase;
+		font-weight:bold;
+		font-size:1.5em;
+	}
+	p{
+		font-size:0.9em;
+		line-height: 1.4em;
+	}
+}
+
+#productDescriptionContact
+{
+	max-height:110px;
+	overflow-y:auto;
+}
+
+.offreBtn{
+	display:block;
+	background:url(../img/offre_btn.png) 0 0 no-repeat;
+   	position:absolute; right:-8px; bottom:20px;
+   	cursor:pointer;
+	width:254px;
+	height:65px;
+	color:white;
+	font-weight:normal;
+	padding: 18px 80px 5px 10px;
+	text-transform:uppercase;
+	font-size:.9em;
+}
+.offreBtn:hover
+{
+	color:white;
+	text-decoration:none;
+}

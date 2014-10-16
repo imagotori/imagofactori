@@ -1,0 +1,80 @@
+{% assign t = site.tags.translations[0] %}
+
+			<script type="text/javascript">
+				var submitted=false;
+				$(document).ready(function() {
+					
+					var validator = $("#contactForm").validate({
+				  		rules: {
+					    	//nom
+					    	"entry.1142754897": {
+					    		required: true
+					    	},
+					    	//societe
+					    	"entry.2028528838": {
+					    		required: true
+					    	},
+					    	//e-mail
+					    	"entry.1444967132": {
+					      		required: true,
+					      		email: true
+					    	},
+					    	//message
+					    	"entry.963994359": {
+					    		required: true
+					    	}
+				  		}
+				  	});
+					$(".offreBtn").click(function() {
+    					validator.resetForm();
+					});
+				});
+			</script>
+
+			{% if include.responseType == 'product' %}
+			<iframe name="hidden_iframe" id="hidden_iframe"
+			style="display:none;" onload="if(submitted)
+			{$('.productContactForm').css('display','none');$('.productContactResponse').css('display','block');}"></iframe>
+			{% else %}
+			<iframe name="hidden_iframe" id="hidden_iframe"
+			style="display:none;" onload="if(submitted)
+			{window.location='contactResponse.html';}"></iframe>
+			{% endif %}
+
+			
+			<form id="contactForm" action="https://docs.google.com/forms/d/18JkArKkwtACdzTogKaPYV_gaAF_8aK9YQ69NZZ06RbI/formResponse" class="form-horizontal contactForm {% if include.responseType == 'product' %}productContactForm{% endif %}" role="form"  method="post" target="hidden_iframe" onsubmit="submitted=true;">
+				<div class="form-group">
+					<label for="entry_1142754897" class="col-lg-3 col-3 control-label">{{t.[page.lang].contact-page.nom}}</label>
+					<div class="col-lg-5 col-8">
+						<input type="text" class="form-control" placeholder="{{t.[page.lang].contact-page.nom}}" name="entry.1142754897" value=""  id="entry_1142754897">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="entry_2028528838" class="col-lg-3 col-3 control-label">{{t.[page.lang].contact-page.societe}}</label>
+					<div class="col-lg-5 col-8">
+						<input type="text" class="form-control" placeholder="{{t.[page.lang].contact-page.societe}}" name="entry.2028528838" id="entry_2028528838">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="entry_1444967132" class="col-lg-3 col-3 control-label">{{t.[page.lang].contact-page.email}}</label>
+					<div class="col-lg-5 col-8">
+						<input type="text" class="form-control" placeholder="{{t.[page.lang].contact-page.email}}" name="entry.1444967132" value="" id="entry_1444967132">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="entry_963994359" class="col-lg-3 col-3 control-label">{{t.[page.lang].contact-page.message}}</label>
+					<div class="col-lg-7 col-8">
+						<textarea class="form-control" rows="3" placeholder="{{t.[page.lang].contact-page.message}}" name="entry.963994359" id="entry_963994359"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-lg-10 col-11 text-right">
+					  <button type="submit" class="submitButton">{{t.[page.lang].contact-page.envoyer}}</button>
+					</div>
+				</div>
+			</form>
+
+
+			<div class='col-lg-12 text-center productContactResponse'>
+				<h4>{{t.[page.lang].contact-page.productresponse}}</h4>
+			</div>

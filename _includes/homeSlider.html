@@ -1,0 +1,15 @@
+<div class="flexslider">
+<ul class="slides">
+{% assign logos = "logo_Chopard.png,logo_Cornu.png,logo_Girard_P.png,logo_TAGHeuer.png,logo_Concord.png,logo_De_Witt.png,logo_harry_winston.png,logo_Chopard.png,logo_Cornu.png,logo_Girard_P.png,logo_TAGHeuer.png,logo_Concord.png,logo_De_Witt.png,logo_harry_winston.png" | split: "," %}
+
+{% comment %}
+    Logos must be stored in "img/slider_logos" folder
+{% endcomment %}
+
+{% for logo in logos %}
+  <li>
+    <img src="{{ site.baseurl }}/img/slider_logos/{{ logo }}"/>
+  </li>
+{% endfor %}
+</ul>
+</div>
