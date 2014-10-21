@@ -15,12 +15,14 @@
 		</div>
 
 		<div class='row rowUnderline' style='padding-top:40px;padding-bottom:60px;'>
-		        <div class="col-lg-6">
+		        <div class="col-lg-12">
 		        	{{ page.text1 }}
 		        </div>
+		        {% comment %}
 		        <div class="col-lg-6">
 		        	<img class='contentImage' src="{{ site.baseurl }}/img/aboutus_img1.png" style='margin-top:0px'/>
 		        </div>
+		        {% endcomment %}
 		</div>
 
 		<div class='row lightGradientBg1' style='padding-top:60px'>
@@ -65,7 +67,9 @@
 		        <div class="col-lg-6">
 					{{ page.title3 }}<br/><br/>
 					{{ page.text3 }}
+		        	{% comment %}
 		        	<img class='contentImage' src="{{ site.baseurl }}/img/aboutus_img2.png"/>
+		        	{% endcomment %}
 		        </div>
 		        <div class="col-lg-6">
 					{{ page.title4 }}<br/><br/>
