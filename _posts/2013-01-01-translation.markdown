@@ -28,7 +28,7 @@ en:
     copyright: "imagofactory &copy;2013 | All right Reserved | Designed by <a href='http://imagotori.com/' target='_blank'>imagotori</a>"
   contact-page:
     nom: Name
-    societe: Society
+    company: Company
     email: E-mail
     message: Message
     envoyer: Send

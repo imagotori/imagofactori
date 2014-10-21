@@ -7,6 +7,9 @@ $listTitleHeight: 40px;
 .listItem{
 	a:hover{text-decoration:none}
 	min-height: 200px;
+	@media (min-width: 992px){
+		max-height: 200px;
+	}
 	.listTitleBg
 	{
 		width: 100%;

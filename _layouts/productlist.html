@@ -46,7 +46,7 @@
 				{% for product in site.pages %}
 					{% if product.layout == 'product' and product.lang == page.lang and product.published == true %}
 	
-						<div class="col-lg-4 col-sm-6 col-12 listItem mix {{ product.sector }} {{ product.product_group }} all">
+						<div class="col-lg-4 col-sm-6 col-12 listItem mix {{ product.our_services }} {{ product.product_group }} all">
 							<a class='productOverlay'  href="{{ site.baseurl }}{{ product.url }}" rel='#overlay'>
 								<img class='contentImage' style='width:100%' src='{{ site.baseurl }}/img/products/thumbs/{{ product.image1 }}' />
 								<div class='listTitleBg'></div>

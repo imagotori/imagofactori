@@ -325,7 +325,13 @@ footer a, footer a:hover {
 .listItem a:hover {
   text-decoration: none;
 }
-/* line 10, _sass/_products.scss */
+@media (min-width: 992px) {
+  /* line 7, _sass/_products.scss */
+  .listItem {
+    max-height: 200px;
+  }
+}
+/* line 13, _sass/_products.scss */
 .listItem .listTitleBg {
   width: 100%;
   height: 40px;
@@ -336,7 +342,7 @@ footer a, footer a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
-/* line 20, _sass/_products.scss */
+/* line 23, _sass/_products.scss */
 .listItem .listTitle {
   width: 100%;
   height: 40px;
@@ -353,23 +359,23 @@ footer a, footer a:hover {
   overflow: hidden;
 }
 
-/* line 38, _sass/_products.scss */
+/* line 41, _sass/_products.scss */
 .listItem:hover .listTitleBg {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
 }
 
-/* line 44, _sass/_products.scss */
+/* line 47, _sass/_products.scss */
 #productsGrid {
   min-height: 300px;
 }
-/* line 46, _sass/_products.scss */
+/* line 49, _sass/_products.scss */
 #productsGrid .mix {
   opacity: 0;
   display: none;
 }
 
-/* line 53, _sass/_products.scss */
+/* line 56, _sass/_products.scss */
 .filter {
   background-color: none;
   cursor: pointer;
@@ -379,12 +385,12 @@ footer a, footer a:hover {
   margin: 10px 10px 5px 0px;
 }
 
-/* line 62, _sass/_products.scss */
+/* line 65, _sass/_products.scss */
 .productsGridFilters {
   padding-top: 40px;
   padding-bottom: 0px;
 }
-/* line 66, _sass/_products.scss */
+/* line 69, _sass/_products.scss */
 .productsGridFilters ul {
   padding: 0px;
   display: block;
@@ -392,7 +398,7 @@ footer a, footer a:hover {
   overflow: auto;
   border-right: 1px solid #c7c7c7;
 }
-/* line 74, _sass/_products.scss */
+/* line 77, _sass/_products.scss */
 .productsGridFilters .active {
   color: #bc1c1d;
 }
@@ -401,7 +407,7 @@ footer a, footer a:hover {
 Jquery Tools Overlay Styling 
 */
 /*Product detail overlay*/
-/* line 85, _sass/_products.scss */
+/* line 88, _sass/_products.scss */
 .apple_overlay, .apple_overlay_contact {
   /* initially overlay is hidden */
   display: none;
@@ -420,7 +426,7 @@ Jquery Tools Overlay Styling
   box-shadow: 0px 0px 15px 8px #060606;
   /* default close button positioned on upper right corner */
 }
-/* line 100, _sass/_products.scss */
+/* line 103, _sass/_products.scss */
 .apple_overlay .close, .apple_overlay_contact .close {
   background-image: url(../img/overlay/close.png);
   position: absolute;
@@ -434,7 +440,7 @@ Jquery Tools Overlay Styling
   z-index: 1;
 }
 
-/* line 111, _sass/_products.scss */
+/* line 114, _sass/_products.scss */
 #overlay, #overlayContact {
   /* use a semi-transparent image for the overlay */
   /*background-image:url(../img/overlay/transparent.png);*/
@@ -443,7 +449,7 @@ Jquery Tools Overlay Styling
 }
 
 /* container for external content. uses vertical scrollbar, if needed */
-/* line 118, _sass/_products.scss */
+/* line 121, _sass/_products.scss */
 div.contentWrap, div.contentWrapContact {
   /*height:441px;*/
   height: 450px;
@@ -452,27 +458,27 @@ div.contentWrap, div.contentWrapContact {
   overflow-x: hidden;
 }
 
-/* line 126, _sass/_products.scss */
+/* line 129, _sass/_products.scss */
 .apple_overlay_contact {
   width: 640px;
 }
-/* line 128, _sass/_products.scss */
+/* line 131, _sass/_products.scss */
 .apple_overlay_contact .rowUnderline {
   padding-bottom: 15px;
 }
-/* line 132, _sass/_products.scss */
+/* line 135, _sass/_products.scss */
 .apple_overlay_contact .close {
   right: 7px;
   top: 10px;
 }
 
-/* line 136, _sass/_products.scss */
+/* line 139, _sass/_products.scss */
 #overlayContact {
   height: 700px;
 }
 
 /* container for external content. uses vertical scrollbar, if needed */
-/* line 140, _sass/_products.scss */
+/* line 143, _sass/_products.scss */
 div.contentWrapContact {
   /*height:441px;*/
   height: 700px;
@@ -482,25 +488,25 @@ div.contentWrapContact {
 }
 
 /*Contact response message*/
-/* line 150, _sass/_products.scss */
+/* line 153, _sass/_products.scss */
 .productContactResponse {
   display: none;
   padding-top: 150px;
 }
 
 /*Product detail styles*/
-/* line 157, _sass/_products.scss */
+/* line 160, _sass/_products.scss */
 #productDetails {
   padding-top: 50px;
 }
-/* line 160, _sass/_products.scss */
+/* line 163, _sass/_products.scss */
 #productDetails h5 {
   text-transform: uppercase;
   margin-bottom: 0px;
   font-weight: bold;
   font-size: 0.9em;
 }
-/* line 166, _sass/_products.scss */
+/* line 169, _sass/_products.scss */
 #productDetails h6 {
   margin-top: 0px;
   margin-bottom: 20px;
@@ -508,30 +514,30 @@ div.contentWrapContact {
   padding-right: 35px;
 }
 
-/* line 174, _sass/_products.scss */
+/* line 177, _sass/_products.scss */
 #productDescription {
   overflow-y: auto;
   max-height: 95px;
 }
-/* line 178, _sass/_products.scss */
+/* line 181, _sass/_products.scss */
 #productDescription h4 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.5em;
 }
-/* line 183, _sass/_products.scss */
+/* line 186, _sass/_products.scss */
 #productDescription p {
   font-size: 0.9em;
   line-height: 1.4em;
 }
 
-/* line 189, _sass/_products.scss */
+/* line 192, _sass/_products.scss */
 #productDescriptionContact {
   max-height: 110px;
   overflow-y: auto;
 }
 
-/* line 195, _sass/_products.scss */
+/* line 198, _sass/_products.scss */
 .offreBtn {
   display: block;
   background: url(../img/offre_btn.png) 0 0 no-repeat;
@@ -548,7 +554,7 @@ div.contentWrapContact {
   font-size: .9em;
 }
 
-/* line 208, _sass/_products.scss */
+/* line 211, _sass/_products.scss */
 .offreBtn:hover {
   color: white;
   text-decoration: none;
@@ -598,9 +604,10 @@ input, textarea {
   text-align: left !important;
   padding: 0px 10px 0px 60px !important;
   font-size: 1.4em;
+  font-weight: normal;
 }
 
-/* line 26, _sass/_contact.scss */
+/* line 27, _sass/_contact.scss */
 .submitButton {
   -moz-border-radius: 0px / 0px;
   -webkit-border-radius: 0px 0px;
@@ -612,14 +619,14 @@ input, textarea {
   /*@include single-box-shadow($imagofactoriShadowColor, -2px, -3px, 20px, 0px, 'inset');*/
 }
 
-/* line 36, _sass/_contact.scss */
+/* line 37, _sass/_contact.scss */
 .error {
   font-weight: normal;
   font-size: 0.9em;
   color: #7b1d1e;
 }
 
-/* line 43, _sass/_contact.scss */
+/* line 44, _sass/_contact.scss */
 .contactResponseMessage {
   line-height: 200px;
 }

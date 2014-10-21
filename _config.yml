@@ -291,17 +291,33 @@ prose:
       - name: "sector"
         field:
           element: "select"
-          label: "Sector"
-          placeholder: "Select a sector"
+          label: "Services"
+          placeholder: "Select a service"
           options:
-            - name: "Luxury"
-              value: "luxury"
-            - name: "Mass market"
-              value: "mass_market"
-            - name: "Leisure & Sports"
-              value: "leisure_and_sport"
-            - name: "Electronics"
-              value: "electronics"
+             - name: "Design"
+               value: design
+             - name: "Technical development"
+               value: technical_development
+             - name: "Sample"
+               value: sample
+             - name: "Sample production"
+               value: sample_production
+             - name: "Mass production"
+               value: mass_production
+             - name: "QC"
+               value: QC
+             - name: "Shipping"
+               value: shipping
+             - name: Installation
+               value: installation
+#            - name: "Luxury"
+#              value: "luxury"
+#            - name: "Mass market"
+#              value: "mass_market"
+#            - name: "Leisure & Sports"
+#              value: "leisure_and_sport"
+#            - name: "Electronics"
+#              value: "electronics"
       - name: "color"
         field:
           element: "text"
