@@ -1,6 +1,7 @@
 name: Imagofactori.com
 highlighter: true
-baseurl: /imagofactori
+#baseurl: /imagofactori
+baseurl: 
 exclude:
   - .gitignore
   - README.md
