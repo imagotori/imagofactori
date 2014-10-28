@@ -11,8 +11,7 @@ delivery: DELIVERY
 title2: LOREM IPSUM
 text2: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
 title3: YOU CAN FIND AN EXAMPLE OF DETAILED PROCESS FLOW HERE
-text3: "Customer quote: “The great thing with imago factrori is that working with them allows me to focus on the 1000 other things I have to do and not longer care about the job I gave them” Janus anus from Raymond Wheeeel<br/><br/>
-Our project success criterias:<br/><br/>
+text3: "Our project success criterias:<br/><br/>
      - We clearly define all operations and processes to eliminate all potential errors through issuing weekly reports both prior to, and during production.<br/><br/>
      - Through a close and personalized partnership, we streamline processes to increase efficiency.<br/><br/>
 	 - We enhance process control and monitor performance daily.<br/>"
