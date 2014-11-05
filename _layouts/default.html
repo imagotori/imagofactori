@@ -21,12 +21,16 @@
         <div class="row lightGradientBg1 sliderTopPadding">
             <div class="col-lg-6">
                 <h3 class='title'>{{ page.title2 }}</h3>
-                <p class='bigText'>{{ page.text2 }} <a href='aboutus.html'>{{ page.linkstext }}</a></p>
+                <p class='bigText'>{{ page.text2 }}</p>
+                <p class='bigText'>{{ page.text2b }}</p>
+                <p class='bigText'>{{ page.text2c }}<a href='aboutus.html'>{{ page.linkstext }}</a></p>
            </div>
             <div class="col-lg-6">
                 <h3 class='title'>{{ page.title1 }}</h3>
                 <img class='contentImage' src="{{ site.baseurl }}/img/what-we-produce-image.jpg" alt="{{ page.title1}}">
-                <p class='bigText'>{{ page.text1 }} <a href='productlist.html'>{{ page.linkstext }}</a></p>
+                <p class='bigText'>{{ page.text1 }}</p>
+                <p class='bigText'>{{ page.text1b }}</p>
+                <p class='bigText'>{{ page.text1c }} <a href='productlist.html'>{{ page.linkstext1 }}</a></p>
             </div>
 
         </div>
@@ -41,6 +45,8 @@
         </div>
 
         <div class="row lightGradientBg2 sliderBottomPadding">
+            <div class="col-lg-12"><h4>{{ page.title3 }}</h4><br/></div>
+
             {% for product in site.pages %}
                     {% if product.layout == 'product' and product.lang == page.lang and product.published == true %}
                             {% if product.product_type == "Shopping bag" or product.product_type == "2 pieces travel watch holder" or product.product_type == "Travel speaker" or product.product_type == "Messenger bag" %}
@@ -49,7 +55,7 @@
                                     <h6 class='smallTitle'>{{ product.product_type }}</h6>
                                     <img style='width:100%' src='{{ site.baseurl }}/img/products/thumbs/{{ product.image1 }}' />
                                     <br/><br/>
-                                    {{ product.content}}
+                                    
                                 </p>
                             </div>
                             {% endif %}
