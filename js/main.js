@@ -81,6 +81,7 @@ $(document).ready(function() {
             if(filterString2 != 'none')
                 $('.filter2').filter(('[data-filter="'+filterString2+'"]')).addClass('active');
         },300);
+
     });
 
 

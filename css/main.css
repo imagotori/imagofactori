@@ -702,15 +702,94 @@ input, textarea {
   }
 }
 
+/* Basic jQuery Slider essential styles */
+/* line 3, _sass/_bjqs.scss */
+ul.bjqs {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: none;
+}
+
+/* line 4, _sass/_bjqs.scss */
+li.bjqs-slide {
+  position: absolute;
+  display: none;
+}
+
+/* line 5, _sass/_bjqs.scss */
+ul.bjqs-controls {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+}
+
+/* line 6, _sass/_bjqs.scss */
+ul.bjqs-controls.v-centered li a {
+  position: absolute;
+  color: #bc1c1d;
+}
+
+/* line 7, _sass/_bjqs.scss */
+ul.bjqs-controls.v-centered li.bjqs-next a {
+  right: 5px;
+}
+
+/* line 8, _sass/_bjqs.scss */
+ul.bjqs-controls.v-centered li.bjqs-prev a {
+  left: 5px;
+}
+
+/* line 9, _sass/_bjqs.scss */
+ol.bjqs-markers {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* line 10, _sass/_bjqs.scss */
+ol.bjqs-markers.h-centered {
+  text-align: center;
+}
+
+/* line 11, _sass/_bjqs.scss */
+ol.bjqs-markers li {
+  display: inline;
+}
+
+/* line 12, _sass/_bjqs.scss */
+ol.bjqs-markers li a {
+  display: inline-block;
+}
+
+/* line 13, _sass/_bjqs.scss */
+p.bjqs-caption {
+  display: block;
+  width: 96%;
+  margin: 0;
+  padding: 2%;
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 15, _sass/_bjqs.scss */
+ul.bjqs-controls.v-centered li a:hover {
+  color: black;
+}
+
 /*
 COMMON/GLOBAL STYLES
 */
-/* line 34, _sass/main.scss */
+/* line 35, _sass/main.scss */
 html {
   height: 100%;
 }
 
-/* line 37, _sass/main.scss */
+/* line 38, _sass/main.scss */
 body {
   background-color: #1F1F1F;
   /*:url('../img/bodyBackground.jpg') repeat 0px 0px;*/
@@ -718,23 +797,23 @@ body {
   height: 100%;
 }
 
-/* line 43, _sass/main.scss */
+/* line 44, _sass/main.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #c7c7c7;
 }
 
-/* line 45, _sass/main.scss */
+/* line 46, _sass/main.scss */
 a, a:hover {
   color: #bc1c1d;
 }
 
-/* line 49, _sass/main.scss */
+/* line 50, _sass/main.scss */
 .title {
   font-size: 1.8em;
   text-transform: uppercase;
 }
 
-/* line 55, _sass/main.scss */
+/* line 56, _sass/main.scss */
 .titleUnderline {
   padding-bottom: 3px;
   background: transparent url(../img/line.png) -150px bottom no-repeat;
@@ -743,7 +822,7 @@ a, a:hover {
 /*
 	TWITTER BOOTSTRAP CONTAINERS overwrites
 */
-/* line 65, _sass/main.scss */
+/* line 66, _sass/main.scss */
 .mainContainer {
   background-color: #1c1c1c;
   -moz-box-shadow: 0px 17px 15px 8px #060606;
@@ -755,7 +834,7 @@ a, a:hover {
 }
 
 /*Only used on page layout. The main container overlaps the top image a little bit more*/
-/* line 75, _sass/main.scss */
+/* line 76, _sass/main.scss */
 .pageContainer {
   margin-top: -45px;
   -moz-box-shadow: 0px 58px 15px 8px #060606;
@@ -763,93 +842,93 @@ a, a:hover {
   box-shadow: 0px 58px 15px 8px #060606;
 }
 
-/* line 81, _sass/main.scss */
+/* line 82, _sass/main.scss */
 .mainContainer, .footerContainer {
   padding: 0px 30px 0px 30px;
 }
 
 @media (min-width: 768px) {
-  /* line 88, _sass/main.scss */
+  /* line 89, _sass/main.scss */
   .mainContainer, .mainNavBarContainer, .languagesContainer, .footerContainer {
     max-width: 728px;
   }
 
-  /* line 91, _sass/main.scss */
+  /* line 92, _sass/main.scss */
   .apple_overlay, .apple_overlay_contact, div.contentWrap, div.contentWrapContact {
     max-width: 600px;
   }
 
-  /* line 94, _sass/main.scss */
+  /* line 95, _sass/main.scss */
   .contactForm {
     padding-top: 20px;
   }
-  /* line 97, _sass/main.scss */
+  /* line 98, _sass/main.scss */
   .contactForm textarea {
     height: 50px !important;
   }
 
-  /* line 99, _sass/main.scss */
+  /* line 100, _sass/main.scss */
   #overlayContact, div.contentWrapContact {
     height: 520px;
   }
 
-  /* line 102, _sass/main.scss */
+  /* line 103, _sass/main.scss */
   .copyrightImages {
     text-align: left;
   }
 }
 @media (min-width: 992px) {
-  /* line 109, _sass/main.scss */
+  /* line 110, _sass/main.scss */
   .mainContainer, .mainNavBarContainer, .languagesContainer, .footerContainer {
     max-width: 940px;
   }
 
-  /* line 112, _sass/main.scss */
+  /* line 113, _sass/main.scss */
   .contactForm {
     padding-top: 20px;
   }
-  /* line 115, _sass/main.scss */
+  /* line 116, _sass/main.scss */
   .contactForm textarea {
     height: 50px !important;
   }
 
-  /* line 117, _sass/main.scss */
+  /* line 118, _sass/main.scss */
   #overlayContact, div.contentWrapContact {
     height: 520px;
   }
 
-  /* line 120, _sass/main.scss */
+  /* line 121, _sass/main.scss */
   .copyrightImages {
     text-align: right;
   }
 }
 @media (min-width: 1200px) {
-  /* line 127, _sass/main.scss */
+  /* line 128, _sass/main.scss */
   .mainContainer, .mainNavBarContainer, .languagesContainer, .footerContainer {
     /*max-width: 1170px;*/
     max-width: 1020px;
   }
 
-  /* line 131, _sass/main.scss */
+  /* line 132, _sass/main.scss */
   .apple_overlay, .apple_overlay_contact, div.contentWrap, div.contentWrapContact {
     max-width: 820px;
   }
 
-  /* line 134, _sass/main.scss */
+  /* line 135, _sass/main.scss */
   .contactForm {
     padding-top: 90px;
   }
-  /* line 137, _sass/main.scss */
+  /* line 138, _sass/main.scss */
   .contactForm textarea {
     height: 200px !important;
   }
 
-  /* line 139, _sass/main.scss */
+  /* line 140, _sass/main.scss */
   #overlayContact, div.contentWrapContact {
     height: 700px;
   }
 
-  /* line 142, _sass/main.scss */
+  /* line 143, _sass/main.scss */
   .copyrightImages {
     text-align: right;
   }

@@ -7,7 +7,7 @@ tags:
 en:
   header-include:
     lang1: English
-    lang2: French
+    lang2: Français
     lang3: Deutsch
     link1: ABOUT US
     link2: PRODUCTION
@@ -45,38 +45,38 @@ en:
 fr:
   header-include:
     lang1: English
-    lang2: French
+    lang2: Français
     lang3: Deutsch
-    link1: ABOUT US
+    link1: À PROPOS DE NOUS
     link2: PRODUCTION
-    link3: REFERENCES
-    link4: CONTACT US
-    sublink1: Our quality process
-    sublink2: What we can produce
-    sublink3: Our client's reference
-    sublink4: Ask information
+    link3: RÉFÉRENCES
+    link4: CONTACTEZ NOUS
+    sublink1: Notre approche qualité
+    sublink2: Nos produits
+    sublink3: Clients de référence
+    sublink4: Demande d’information
   footer-include:
-    title1: SALES, PROJECT SUPPORT & CUSTOMER SERVICE
-    title2: FACTORY
-    title3: HEAD OFFICE
+    title1: SERVICE COMMERCIAL, GESTION DE PROJET & SERVICE À LA CLIENTÈLE
+    title2: USINE
+    title3: BUREAU CENTRAL
     address1: "Av. de Chailly 23 1012 Lausanne<br/>Switzerland<br/>+41 21 923 07 98<br/>email: <a href='mailto:sales@imagofactori.com'>sales@imagofactori.com</a>"
     address2: "91 Li Xin Road, Dan Zhu You, Bu Ji<br/>Shenzen, China<br/>email: <a href='mailto:infos@imagofactori.com'>info@imagofactori.com</a>"
     address3: "1280 Yuyuan Road<br/>Shangai city, China<br/>email: <a href='mailto:infos@imagofactori.com'>info@imagofactori.com</a>"
     address4: "208-209, Jin Min Building<br/>Zi Zhu 6 road , Zhu Zi Lin<br/>Futian - Shenzhen<br/>China<br/>+86 138 2877 2234<br/>email: <a href='mailto:info@imagofactori.com'>info@imagofactori.com</a>"
-    copyright: "imagofactory &copy;2013 | All right Reserved | Designed by <a href='http://imagotori.com/' target='_blank'>imagotori</a>"
+    copyright: "imagofactory &copy;2013 | Tous droits réservés | Conçu par <a href='http://imagotori.com/' target='_blank'>imagotori</a>"
   contact-page:
     nom: Nom
-    societe: Societe
-    email: E-mail
+    societe: Entreprise
+    email: Courriel
     message: Message
     envoyer: Envoyer
-    productresponse: THANK YOU FOR YOUR MESSAGE. WE WILL CONTACT YOU AS SOON AS WE CAN.
+    productresponse: MERCI POUR VOTRE MESSAGE. NOUS PRENDRONS CONTACT AVEC VOUS DANS LES MEILLEURS DÉLAIS.
   product-page:
-    color: Color
-    material: Material
-    leadtime: Lead time
-    priceperunit: Price per unit
-    minquantperorder: Min quantity per order
-    formprefill: I would like to receive more information about product
+    color: Couleur
+    material: Matière
+    leadtime: Délai de production
+    priceperunit: Prix par unité
+    minquantperorder: Quantité minimale par commande
+    formprefill: Je souhaite obtenir plus d’informations sur le produit
 ---
 No content fg

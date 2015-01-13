@@ -20,18 +20,18 @@
 				{% comment %}
 				Product groups:<br/>
 				{% endcomment %}
-				Clients:<br/>
+				{{ page.group1 }}<br/>
 				<ul>
-					<li class="filter filterReset filter1" data-filter="all">All</li>
+					<li class="filter filterReset filter1" data-filter="all">{{ page.all }}</li>
 				{% for option in site.prose.metadata.products[3].field.options %}
 					<li class="filter filter1" data-filter="{{ option.value }}">{{ option.name }}</li>
 				{% endfor%}
 				</ul>
 			</div>
 			<div class="col-lg-6">
-				Sector:
+				{{ page.group2 }}
 				<ul style='border:0px;'>
-					<li class="filter filterReset filter2" data-filter="all">All</li>
+					<li class="filter filterReset filter2" data-filter="all">{{ page.all }}</li>
 				{% for option in site.prose.metadata.products[4].field.options %}
 					<li class="filter filter2" data-filter="{{ option.value }}">{{ option.name }}</li>
 				{% endfor%}

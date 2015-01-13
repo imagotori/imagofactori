@@ -1,7 +1,7 @@
 ---
 layout: contact
 lang: fr
-title: Contact us
+title: CONTACTEZ NOUS
 ---
 
 

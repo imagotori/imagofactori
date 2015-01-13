@@ -1,7 +1,7 @@
 ---
 layout: references
 lang: fr
-title: Our clients reference
+title: Clients de référence
 ---
 
 

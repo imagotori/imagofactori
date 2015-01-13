@@ -1,3 +1,4 @@
 _site/
 specs-docs
 .sass-cache
+products/*.zip

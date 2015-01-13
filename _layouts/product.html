@@ -12,9 +12,24 @@
 
     <div class='container'>
         <div class='row'>
-            <div class="col-7" id='productImage'>
-                <img class='contentImage' style='width:100%' src='{{ site.baseurl }}/img/products/thumbs/{{ page.image1 }}' />
-            </div>
+            {% if page.image2 %}
+                <div class="col-7" id='productImage'>
+                    <div class="productModalImages">
+                    <ul class="bjqs">
+                        <li>
+                        <img class='contentImage' style='width:100%' src='{{ site.baseurl }}/img/products/thumbs/{{ page.image1 }}' />
+                        </li>
+                        <li>
+                        <img class='contentImage' style='width:100%' src='{{ site.baseurl }}/img/products/thumbs/{{ page.image2 }}' />
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            {% else %}
+                <div class="col-7" id='productImage'>
+                        <img class='contentImage' style='width:100%' src='{{ site.baseurl }}/img/products/thumbs/{{ page.image1 }}' />
+                </div>
+            {% endif %}
             <div class="col-5" id='productDetails'>
 
                 <h5>{{t.[page.lang].product-page.dimensions}}</h5>
@@ -48,6 +63,17 @@
         s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
     {% endcomment %}
+    <script>
+        //Initialize the images slider for the product detail page
+        $('.productModalImages').bjqs({
+            //'height' : "100",
+            'width' : "100%",
+            'responsive' : true,
+            'showmarkers' : false,
+            'hoverpause' : true,
+            'randomstart' : false
+        });
+    </script>
 
   </body>
 </html>
