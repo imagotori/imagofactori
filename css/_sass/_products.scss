@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 	PRODUCT LIST AND PRODUCT DETAIL PAGES STYLES
 */
@@ -101,14 +102,18 @@ Jquery Tools Overlay Styling
     @include single-box-shadow($imagofactoriShadowColor, 0px, 0px, 15px, 8px);
 	/* default close button positioned on upper right corner */
 	.close {
-    	background-image:url(../img/overlay/close.png);
-    	position:absolute; right:20px; top:20px;
+    	position:absolute; right:0px; top:5px;
     	cursor:pointer;
-    	width:32px;
-    	//height:27px;
-    	height:35px;
+    	width:20px;
+    	height:20px;
     	@include opacity(1);
+    	text-shadow: none;
+    	font-size: 14px;
     	z-index:1;
+    	&:before{
+    		content:"✕";
+    		color: white;
+    	}
 	}
 }
 #overlay,#overlayContact {

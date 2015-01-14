@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 COLOR CONSTANTS
 */
@@ -317,21 +318,21 @@ footer a, footer a:hover {
 /*
 	PRODUCT LIST AND PRODUCT DETAIL PAGES STYLES
 */
-/* line 7, _sass/_products.scss */
+/* line 8, _sass/_products.scss */
 .listItem {
   min-height: 200px;
 }
-/* line 8, _sass/_products.scss */
+/* line 9, _sass/_products.scss */
 .listItem a:hover {
   text-decoration: none;
 }
 @media (min-width: 992px) {
-  /* line 7, _sass/_products.scss */
+  /* line 8, _sass/_products.scss */
   .listItem {
     max-height: 200px;
   }
 }
-/* line 13, _sass/_products.scss */
+/* line 14, _sass/_products.scss */
 .listItem .listTitleBg {
   width: 100%;
   height: 40px;
@@ -342,7 +343,7 @@ footer a, footer a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
-/* line 23, _sass/_products.scss */
+/* line 24, _sass/_products.scss */
 .listItem .listTitle {
   width: 100%;
   height: 40px;
@@ -359,23 +360,23 @@ footer a, footer a:hover {
   overflow: hidden;
 }
 
-/* line 41, _sass/_products.scss */
+/* line 42, _sass/_products.scss */
 .listItem:hover .listTitleBg {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
 }
 
-/* line 47, _sass/_products.scss */
+/* line 48, _sass/_products.scss */
 #productsGrid {
   min-height: 300px;
 }
-/* line 49, _sass/_products.scss */
+/* line 50, _sass/_products.scss */
 #productsGrid .mix {
   opacity: 0;
   display: none;
 }
 
-/* line 56, _sass/_products.scss */
+/* line 57, _sass/_products.scss */
 .filter {
   background-color: none;
   cursor: pointer;
@@ -385,12 +386,12 @@ footer a, footer a:hover {
   margin: 10px 10px 5px 0px;
 }
 
-/* line 65, _sass/_products.scss */
+/* line 66, _sass/_products.scss */
 .productsGridFilters {
   padding-top: 40px;
   padding-bottom: 0px;
 }
-/* line 69, _sass/_products.scss */
+/* line 70, _sass/_products.scss */
 .productsGridFilters ul {
   padding: 0px;
   display: block;
@@ -398,7 +399,7 @@ footer a, footer a:hover {
   overflow: auto;
   border-right: 1px solid #c7c7c7;
 }
-/* line 77, _sass/_products.scss */
+/* line 78, _sass/_products.scss */
 .productsGridFilters .active {
   color: #bc1c1d;
 }
@@ -407,7 +408,7 @@ footer a, footer a:hover {
 Jquery Tools Overlay Styling 
 */
 /*Product detail overlay*/
-/* line 88, _sass/_products.scss */
+/* line 89, _sass/_products.scss */
 .apple_overlay, .apple_overlay_contact {
   /* initially overlay is hidden */
   display: none;
@@ -426,21 +427,27 @@ Jquery Tools Overlay Styling
   box-shadow: 0px 0px 15px 8px #060606;
   /* default close button positioned on upper right corner */
 }
-/* line 103, _sass/_products.scss */
+/* line 104, _sass/_products.scss */
 .apple_overlay .close, .apple_overlay_contact .close {
-  background-image: url(../img/overlay/close.png);
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 0px;
+  top: 5px;
   cursor: pointer;
-  width: 32px;
-  height: 35px;
+  width: 20px;
+  height: 20px;
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
+  text-shadow: none;
+  font-size: 14px;
   z-index: 1;
 }
+/* line 113, _sass/_products.scss */
+.apple_overlay .close:before, .apple_overlay_contact .close:before {
+  content: "✕";
+  color: white;
+}
 
-/* line 114, _sass/_products.scss */
+/* line 119, _sass/_products.scss */
 #overlay, #overlayContact {
   /* use a semi-transparent image for the overlay */
   /*background-image:url(../img/overlay/transparent.png);*/
@@ -449,7 +456,7 @@ Jquery Tools Overlay Styling
 }
 
 /* container for external content. uses vertical scrollbar, if needed */
-/* line 121, _sass/_products.scss */
+/* line 126, _sass/_products.scss */
 div.contentWrap, div.contentWrapContact {
   /*height:441px;*/
   height: 450px;
@@ -458,27 +465,27 @@ div.contentWrap, div.contentWrapContact {
   overflow-x: hidden;
 }
 
-/* line 129, _sass/_products.scss */
+/* line 134, _sass/_products.scss */
 .apple_overlay_contact {
   width: 640px;
 }
-/* line 131, _sass/_products.scss */
+/* line 136, _sass/_products.scss */
 .apple_overlay_contact .rowUnderline {
   padding-bottom: 15px;
 }
-/* line 135, _sass/_products.scss */
+/* line 140, _sass/_products.scss */
 .apple_overlay_contact .close {
   right: 7px;
   top: 10px;
 }
 
-/* line 139, _sass/_products.scss */
+/* line 144, _sass/_products.scss */
 #overlayContact {
   height: 700px;
 }
 
 /* container for external content. uses vertical scrollbar, if needed */
-/* line 143, _sass/_products.scss */
+/* line 148, _sass/_products.scss */
 div.contentWrapContact {
   /*height:441px;*/
   height: 700px;
@@ -488,25 +495,25 @@ div.contentWrapContact {
 }
 
 /*Contact response message*/
-/* line 153, _sass/_products.scss */
+/* line 158, _sass/_products.scss */
 .productContactResponse {
   display: none;
   padding-top: 150px;
 }
 
 /*Product detail styles*/
-/* line 160, _sass/_products.scss */
+/* line 165, _sass/_products.scss */
 #productDetails {
   padding-top: 50px;
 }
-/* line 163, _sass/_products.scss */
+/* line 168, _sass/_products.scss */
 #productDetails h5 {
   text-transform: uppercase;
   margin-bottom: 0px;
   font-weight: bold;
   font-size: 0.9em;
 }
-/* line 169, _sass/_products.scss */
+/* line 174, _sass/_products.scss */
 #productDetails h6 {
   margin-top: 0px;
   margin-bottom: 20px;
@@ -514,30 +521,30 @@ div.contentWrapContact {
   padding-right: 35px;
 }
 
-/* line 177, _sass/_products.scss */
+/* line 182, _sass/_products.scss */
 #productDescription {
   overflow-y: auto;
   max-height: 95px;
 }
-/* line 181, _sass/_products.scss */
+/* line 186, _sass/_products.scss */
 #productDescription h4 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.5em;
 }
-/* line 186, _sass/_products.scss */
+/* line 191, _sass/_products.scss */
 #productDescription p {
   font-size: 0.9em;
   line-height: 1.4em;
 }
 
-/* line 192, _sass/_products.scss */
+/* line 197, _sass/_products.scss */
 #productDescriptionContact {
   max-height: 110px;
   overflow-y: auto;
 }
 
-/* line 198, _sass/_products.scss */
+/* line 203, _sass/_products.scss */
 .offreBtn {
   display: block;
   background: url(../img/offre_btn.png) 0 0 no-repeat;
@@ -554,7 +561,7 @@ div.contentWrapContact {
   font-size: .9em;
 }
 
-/* line 211, _sass/_products.scss */
+/* line 216, _sass/_products.scss */
 .offreBtn:hover {
   color: white;
   text-decoration: none;
@@ -781,15 +788,136 @@ ul.bjqs-controls.v-centered li a:hover {
   color: black;
 }
 
+@media all {
+  /* line 2, _sass/_featherlight.scss */
+  .featherlight {
+    display: none;
+    /* dimensions: spanning the background from edge to edge */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000000;
+    /* position: centering content */
+    text-align: center;
+    /* insures that the ::before pseudo element doesn't force wrap with fixed width content; */
+    white-space: nowrap;
+    /* styling */
+    cursor: pointer;
+    background: #333;
+    /* IE8 "hack" for nested featherlights */
+    background: transparent;
+  }
+
+  /* support for nested featherlights. Does not work in IE8 (use JS to fix) */
+  /* line 25, _sass/_featherlight.scss */
+  .featherlight:last-of-type {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  /* line 29, _sass/_featherlight.scss */
+  .featherlight:before {
+    /* position: trick to center content vertically */
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+  }
+
+  /* line 38, _sass/_featherlight.scss */
+  .featherlight .featherlight-content {
+    /* make content container for positioned elements (close button) */
+    position: relative;
+    /* position: centering vertical and horizontal */
+    text-align: left;
+    vertical-align: middle;
+    display: inline-block;
+    /* dimensions: cut off images */
+    overflow: auto;
+    padding: 25px 25px 0;
+    border-bottom: 25px solid transparent;
+    /* dimensions: handling small or empty content */
+    min-width: 30%;
+    /* dimensions: handling large content */
+    margin-left: 5%;
+    margin-right: 5%;
+    max-height: 95%;
+    /* styling */
+    background: #fff;
+    cursor: auto;
+    /* reset white-space wrapping */
+    white-space: normal;
+  }
+
+  /* contains the content */
+  /* line 69, _sass/_featherlight.scss */
+  .featherlight .featherlight-inner {
+    /* make sure its visible */
+    display: block;
+  }
+
+  /* line 74, _sass/_featherlight.scss */
+  .featherlight .featherlight-close-icon {
+    /* position: centering vertical and horizontal */
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    /* dimensions: 25px x 25px */
+    line-height: 25px;
+    width: 25px;
+    /* styling */
+    cursor: pointer;
+    text-align: center;
+    font: Arial, sans-serif;
+    background: #fff;
+    /* Set the background in case it overlaps the content */
+    background: rgba(255, 255, 255, 0.3);
+    color: #000;
+  }
+
+  /* line 95, _sass/_featherlight.scss */
+  .featherlight .featherlight-image {
+    /* styling */
+    width: 100%;
+  }
+
+  /* line 101, _sass/_featherlight.scss */
+  .featherlight-iframe .featherlight-content {
+    /* removed the border for image croping since iframe is edge to edge */
+    border-bottom: 0;
+    padding: 0;
+  }
+
+  /* line 107, _sass/_featherlight.scss */
+  .featherlight iframe {
+    /* styling */
+    border: none;
+  }
+}
+/* handling phones and small screens */
+@media only screen and (max-width: 1024px) {
+  /* line 115, _sass/_featherlight.scss */
+  .featherlight .featherlight-content {
+    /* dimensions: maximize lightbox with for small screens */
+    margin-left: 10px;
+    margin-right: 10px;
+    max-height: 98%;
+    padding: 10px 10px 0;
+    border-bottom: 10px solid transparent;
+  }
+}
 /*
 COMMON/GLOBAL STYLES
 */
-/* line 35, _sass/main.scss */
+/* line 37, _sass/main.scss */
 html {
   height: 100%;
 }
 
-/* line 38, _sass/main.scss */
+/* line 40, _sass/main.scss */
 body {
   background-color: #1F1F1F;
   /*:url('../img/bodyBackground.jpg') repeat 0px 0px;*/
@@ -797,23 +925,23 @@ body {
   height: 100%;
 }
 
-/* line 44, _sass/main.scss */
+/* line 46, _sass/main.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #c7c7c7;
 }
 
-/* line 46, _sass/main.scss */
+/* line 48, _sass/main.scss */
 a, a:hover {
   color: #bc1c1d;
 }
 
-/* line 50, _sass/main.scss */
+/* line 52, _sass/main.scss */
 .title {
   font-size: 1.8em;
   text-transform: uppercase;
 }
 
-/* line 56, _sass/main.scss */
+/* line 58, _sass/main.scss */
 .titleUnderline {
   padding-bottom: 3px;
   background: transparent url(../img/line.png) -150px bottom no-repeat;
@@ -822,7 +950,7 @@ a, a:hover {
 /*
 	TWITTER BOOTSTRAP CONTAINERS overwrites
 */
-/* line 66, _sass/main.scss */
+/* line 68, _sass/main.scss */
 .mainContainer {
   background-color: #1c1c1c;
   -moz-box-shadow: 0px 17px 15px 8px #060606;
@@ -834,7 +962,7 @@ a, a:hover {
 }
 
 /*Only used on page layout. The main container overlaps the top image a little bit more*/
-/* line 76, _sass/main.scss */
+/* line 78, _sass/main.scss */
 .pageContainer {
   margin-top: -45px;
   -moz-box-shadow: 0px 58px 15px 8px #060606;
@@ -842,93 +970,93 @@ a, a:hover {
   box-shadow: 0px 58px 15px 8px #060606;
 }
 
-/* line 82, _sass/main.scss */
+/* line 84, _sass/main.scss */
 .mainContainer, .footerContainer {
   padding: 0px 30px 0px 30px;
 }
 
 @media (min-width: 768px) {
-  /* line 89, _sass/main.scss */
+  /* line 91, _sass/main.scss */
   .mainContainer, .mainNavBarContainer, .languagesContainer, .footerContainer {
     max-width: 728px;
   }
 
-  /* line 92, _sass/main.scss */
+  /* line 94, _sass/main.scss */
   .apple_overlay, .apple_overlay_contact, div.contentWrap, div.contentWrapContact {
     max-width: 600px;
   }
 
-  /* line 95, _sass/main.scss */
+  /* line 97, _sass/main.scss */
   .contactForm {
     padding-top: 20px;
   }
-  /* line 98, _sass/main.scss */
+  /* line 100, _sass/main.scss */
   .contactForm textarea {
     height: 50px !important;
   }
 
-  /* line 100, _sass/main.scss */
+  /* line 102, _sass/main.scss */
   #overlayContact, div.contentWrapContact {
     height: 520px;
   }
 
-  /* line 103, _sass/main.scss */
+  /* line 105, _sass/main.scss */
   .copyrightImages {
     text-align: left;
   }
 }
 @media (min-width: 992px) {
-  /* line 110, _sass/main.scss */
+  /* line 112, _sass/main.scss */
   .mainContainer, .mainNavBarContainer, .languagesContainer, .footerContainer {
     max-width: 940px;
   }
 
-  /* line 113, _sass/main.scss */
+  /* line 115, _sass/main.scss */
   .contactForm {
     padding-top: 20px;
   }
-  /* line 116, _sass/main.scss */
+  /* line 118, _sass/main.scss */
   .contactForm textarea {
     height: 50px !important;
   }
 
-  /* line 118, _sass/main.scss */
+  /* line 120, _sass/main.scss */
   #overlayContact, div.contentWrapContact {
     height: 520px;
   }
 
-  /* line 121, _sass/main.scss */
+  /* line 123, _sass/main.scss */
   .copyrightImages {
     text-align: right;
   }
 }
 @media (min-width: 1200px) {
-  /* line 128, _sass/main.scss */
+  /* line 130, _sass/main.scss */
   .mainContainer, .mainNavBarContainer, .languagesContainer, .footerContainer {
     /*max-width: 1170px;*/
     max-width: 1020px;
   }
 
-  /* line 132, _sass/main.scss */
+  /* line 134, _sass/main.scss */
   .apple_overlay, .apple_overlay_contact, div.contentWrap, div.contentWrapContact {
     max-width: 820px;
   }
 
-  /* line 135, _sass/main.scss */
+  /* line 137, _sass/main.scss */
   .contactForm {
     padding-top: 90px;
   }
-  /* line 138, _sass/main.scss */
+  /* line 140, _sass/main.scss */
   .contactForm textarea {
     height: 200px !important;
   }
 
-  /* line 140, _sass/main.scss */
+  /* line 142, _sass/main.scss */
   #overlayContact, div.contentWrapContact {
     height: 700px;
   }
 
-  /* line 143, _sass/main.scss */
+  /* line 145, _sass/main.scss */
   .copyrightImages {
     text-align: right;
   }

@@ -17,17 +17,24 @@
                     <div class="productModalImages">
                     <ul class="bjqs">
                         <li>
-                        <img class='contentImage' style='width:100%' src='{{ site.baseurl }}/img/products/thumbs/{{ page.image1 }}' />
+                        <a class='productModalSliderImage' href='{{ site.baseurl }}/img/products/{{ page.image1 }}' data-featherlight='image'>
+                            <img class='contentImage' style='width:100%' src='{{ site.baseurl }}/img/products/thumbs/{{ page.image1 }}' />
+                        </a>
                         </li>
                         <li>
-                        <img class='contentImage' style='width:100%' src='{{ site.baseurl }}/img/products/thumbs/{{ page.image2 }}' />
+                        <a class='productModalSliderImage' href='{{ site.baseurl }}/img/products/{{ page.image2 }}' data-featherlight='image'>
+                            <img class='contentImage' style='width:100%' src='{{ site.baseurl }}/img/products/thumbs/{{ page.image2 }}' />
+                        </a>
                         </li>
                     </ul>
                     </div>
                 </div>
             {% else %}
                 <div class="col-7" id='productImage'>
-                        <img class='contentImage' style='width:100%' src='{{ site.baseurl }}/img/products/thumbs/{{ page.image1 }}' />
+                    <a class='productModalSliderImage' href='{{ site.baseurl }}/img/products/{{ page.image1 }}' data-featherlight='image'>
+                            <img class='contentImage' style='width:100%' src='{{ site.baseurl }}/img/products/thumbs/{{ page.image1 }}' />
+
+                    </a>
                 </div>
             {% endif %}
             <div class="col-5" id='productDetails'>
@@ -54,6 +61,7 @@
         </div>
     </div>
     
+    <script src="{{ site.baseurl }}/js/vendor/featherlight/featherlight.min.js"></script>
     {% comment %}
     <!-- Google analytics snippet -->
     <script>
@@ -73,6 +81,10 @@
             'hoverpause' : true,
             'randomstart' : false
         });
+        console.log("done!");
+        //Make each image of the slider a featherlight lightbox
+        $('.productModalSliderImage').featherlight(); 
+        console.log("called: "+$('.productModalSliderImage').html() );
     </script>
 
   </body>
